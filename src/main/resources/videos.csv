@@ -1,0 +1,269 @@
+Java SE alapok - Bevezetés;Java SE alapok - Bevezetés;javabscwelcome
+Eszközkészlet;Java történeti háttér;background
+Eszközkészlet;Oracle JDK telepítése;installjdk
+Eszközkészlet;Több JDK egy gépen;multiplejdk
+Eszközkészlet;Java platform;introjdk
+Eszközkészlet;Maven;intromaven
+Eszközkészlet;Maven használata proxy mögött;mavenproxy
+Eszközkészlet;IDE;introide
+Eszközkészlet;Git használata az IDE-ben;introgit
+Eszközkészlet;Feltöltés GitHubra;introgithub
+Eszközkészlet;Gyakori kérdések a Javaval kapcsolatosan;javafaq
+Eszközkészlet;Eszközkészlet - összefoglalás;summarytools
+Bevezetés a Java osztályok használatába;Kiírás és beolvasás konzolról;classstructureio
+Bevezetés a Java osztályok használatába;Objektumok és attribútumok;classstructureattributes
+Bevezetés a Java osztályok használatába;Metódusok;classstructuremethods
+Bevezetés a Java osztályok használatába;Konstruktorok;classstructureconstructors
+Bevezetés a Java osztályok használatába;UML, példányok konzol íráskor/olvasáskor;classstructureintegrate
+Bevezetés a Java osztályok használatába;Bevezetés a Java osztályok használatába - összefoglalás;summaryclasses
+A nyelv építőkövei;Kódolási konvenciók;conventions
+A nyelv építőkövei;SonarLint;sonarlint
+A nyelv építőkövei;Literálok és lokális változók;localvariables
+A nyelv építőkövei;Kifejezések és utasítások;statements
+A nyelv építőkövei;Csomagok;packages
+A nyelv építőkövei;Java API;javaapi
+A nyelv építőkövei;JAR állomány;distjar
+A nyelv építőkövei;Szöveges típus;stringtype
+A nyelv építőkövei;Sortörés kezelése;linebreak
+A nyelv építőkövei;Dátum és időkezelés alapok;introdate
+A nyelv építőkövei;Bevezetés a vezérlési szerkezetekbe;introcontrol
+A nyelv építőkövei;A nyelv építőkövei - összefoglalás;summaryintrojava
+Bonyolultabb típusok;Tömbök;array
+Bonyolultabb típusok;Parancssori paraméterek;cmdarguments
+Bonyolultabb típusok;Tömbök tömbje;arrayofarrays
+Bonyolultabb típusok;Tömbök kezelése;arrays
+Bonyolultabb típusok;Lista;arraylist
+Bonyolultabb típusok;Lista létrehozása;aslist
+Bonyolultabb típusok;Ciklusok fajtái;looptypes
+Bonyolultabb típusok;Módosítás bejáráskor;looptypesmodify
+Bonyolultabb típusok;Debug;debug
+Bonyolultabb típusok;Konstans értékek használata;finalmodifier
+Bonyolultabb típusok;Math és Random osztály;math
+Bonyolultabb típusok;Bonyolultabb típusok - összefoglalás;summarycomplextypes
+Részletesebben az osztályokról és objektumokról;Objektumok;objects
+Részletesebben az osztályokról és objektumokról;Bevezetés az attribútumok használatába;attributes
+Részletesebben az osztályokról és objektumokról;Bevezetés a konstruktorok használatába;introconstructors
+Részletesebben az osztályokról és objektumokról;Bevezetés a metódusok használatába;intromethods
+Részletesebben az osztályokról és objektumokról;Referenciák;references
+Részletesebben az osztályokról és objektumokról;Kompozíció;composition
+Részletesebben az osztályokról és objektumokról;Kompozíció listával;compositionlist
+Részletesebben az osztályokról és objektumokról;Részletesebben az osztályokról és objektumokról - összefoglalás;summaryintroclassesobjects
+Projektfeladat;Projektfeladat - Tárgyaló nyilvántartás;meetingrooms
+Típusok és operátorok;Literálok;literals
+Típusok és operátorok;Egyszerű típusok;primitivetypes
+Típusok és operátorok;Karakterek;chars
+Típusok és operátorok;Felsorolásos típus;enumtype
+Típusok és operátorok;Operátorok;operators
+Típusok és operátorok;Oszthatóság vizsgálata;mathproblems
+Típusok és operátorok;Típuskonverzió;typeconversion
+Típusok és operátorok;Egész és lebegőpontos számok;numbers
+Típusok és operátorok;Különbségek a típuskonverzió, boxing és String műveletek között;conversions
+Típusok és operátorok;Típusok és operátorok - összefoglalás;summarytypesoperators
+Unit tesztelés JUnittal;Unit tesztelés JUnittal;introjunit
+Unit tesztelés JUnittal;JUnit 5;junit5
+Unit tesztelés JUnittal;JUnit assert metódusok;junit5assert
+Unit tesztelés JUnittal;Tesztesetek életciklusa;junit5fixture
+Unit tesztelés JUnittal;JUnit 4 és JUnit 5 közötti különbségek;junit4and5
+Unit tesztelés JUnittal;Unit tesztelés JUnittal - összefoglalás;summaryjunit
+Részletesen a szöveges típusról;String alapok;stringbasic
+Részletesen a szöveges típusról;Konkatenáció;stringconcat
+Részletesen a szöveges típusról;Főbb String metódusok;stringmethods
+Részletesen a szöveges típusról;StringBuilder;stringbuilder
+Részletesen a szöveges típusról;Szövegek elválasztása vesszővel;stringseparate
+Részletesen a szöveges típusról;Scanner;stringscanner
+Részletesen a szöveges típusról;printf;formatlocaleprintf
+Részletesen a szöveges típusról;Részletesen a szöveges típusról - összefoglalás;summarystring
+Vezérlési szerkezetek;Vezérlési szerkezetek és az elágazás;controlselection
+Vezérlési szerkezetek;Ciklusok;controliteration
+Vezérlési szerkezetek;Haladó vezérlési szerkezetek;controladvanced
+Vezérlési szerkezetek;Vezérlési szerkezetek - összefoglalás;summarycontrolstatements
+Bevezetés a kivétel- és fájlkezelésbe;Első kivétel;introexceptionfirstexception
+Bevezetés a kivétel- és fájlkezelésbe;További kivételek;introexceptionmoreexceptions
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel a hívási láncban;introexceptiontrace
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel kezelése;introexceptiontrycatch
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel kezelése a hívási láncban;introexceptiontrycatchtrace
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel eldobása;introexceptionthrow
+Bevezetés a kivétel- és fájlkezelésbe;Kivételkezelés tesztelése JUnit 4 használatával;introexceptionthrowjunit4
+Bevezetés a kivétel- és fájlkezelésbe;Kivételkezelés tesztelése JUnit 5 használatával;introexceptionthrowjunit5
+Bevezetés a kivétel- és fájlkezelésbe;Fájl beolvasása;introexceptionreadfile
+Bevezetés a kivétel- és fájlkezelésbe;Kötelezően kezelendő kivétel a hívási láncban;introexceptioncheckedtrace
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel becsomagolása;introexceptioncause
+Bevezetés a kivétel- és fájlkezelésbe;Fájlbeolvasás tesztelése JUnit 4 használatával;introexceptionreadfiletestjunit4
+Bevezetés a kivétel- és fájlkezelésbe;Fájlbeolvasás tesztelése JUnit 5 használatával;introexceptionreadfiletestjunit5
+Bevezetés a kivétel- és fájlkezelésbe;Fájl írása;introexceptionwritefile
+Bevezetés a kivétel- és fájlkezelésbe;Fájl írásának tesztelése JUnit 4 használatával;introexceptionwritefiletestjunit4
+Bevezetés a kivétel- és fájlkezelésbe;Fájl írásának tesztelése JUnit 5 használatával;introexceptionwritefiletestjunit5
+Bevezetés a kivétel- és fájlkezelésbe;A finally ág;introexceptionfinally
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel- és fájlkezelés - összefoglalás;summaryintroexception
+Programozási tételek és egyéb algoritmusok;Összegzés tétele;algorithmssum
+Programozási tételek és egyéb algoritmusok;Számlálás tétele;algorithmscount
+Programozási tételek és egyéb algoritmusok;Szélsőérték-keresés tétele;algorithmsmax
+Programozási tételek és egyéb algoritmusok;Eldöntés tétele;algorithmsdecision
+Programozási tételek és egyéb algoritmusok;Szűrés;algorithmsfilter
+Programozási tételek és egyéb algoritmusok;Transzformáció;algorithmstransformation
+Programozási tételek és egyéb algoritmusok;Rekurzió;recursion
+Programozási tételek és egyéb algoritmusok;Programozási tételek és egyéb algoritmusok - összefoglalás;summaryalgorithms
+Projektfeladat;Projektfeladat - Elektronikus osztálynapló;schoolrecords
+Attribútumok és metódusok;Immutable objektumok;immutable
+Attribútumok és metódusok;JavaBeans objektumok;javabeans
+Attribútumok és metódusok;Metódusok;methodstructure
+Attribútumok és metódusok;Értékmásolás szerinti paraméterátadás;methodpass
+Attribútumok és metódusok;Metódus paraméterek és visszatérési értékek;methodparam
+Attribútumok és metódusok;Változó hosszúságú paraméterlista;methodvarargs
+Attribútumok és metódusok;Metódus hívások láncolása;methodchain
+Attribútumok és metódusok;Metódusnév túlterhelés;methodoverloading
+Attribútumok és metódusok;Statikus attribútumok és metódusok;staticattrmeth
+Attribútumok és metódusok;Attribútumok és metódusok - összefoglalás;summaryattributesmethods
+Konstruktorok és inicializátorok;Default és paraméter nélküli konstruktor;defaultconstructor
+Konstruktorok és inicializátorok;Konstruktor túlterhelés;constructoroverloading
+Konstruktorok és inicializátorok;Inicializátorok;initializer
+Konstruktorok és inicializátorok;Konstruktorok és inicializátorok - összefoglalás;summaryconstructors
+Öröklődés;Öröklődés;introinheritance
+Öröklődés;Konstruktorok és az öröklődés viszonya;inheritanceconstructor
+Öröklődés;Statikus és dinamikus típus;dynamictypes
+Öröklődés;Object ősosztály;objectclass
+Öröklődés;Attribútumok öröklődése;inheritanceattributes
+Öröklődés;Metódusok öröklődése;inheritancemethods
+Öröklődés;Öröklődés - összefoglalás;summaryinheritance
+Absztrakt osztályok és interfészek;Absztrakt osztályok;abstractclass
+Absztrakt osztályok és interfészek;Interfészek;interfaces
+Absztrakt osztályok és interfészek;Interfészekkel kapcsolatos szabályok;interfacerules
+Absztrakt osztályok és interfészek;Dependency inversion;interfacedependencyinversion
+Absztrakt osztályok és interfészek;Interfészek és az öröklődés viszonya;interfaceextends
+Absztrakt osztályok és interfészek;Default interfész metódusok;interfacedefaultmethods
+Absztrakt osztályok és interfészek;Statikus interfész metódusok;interfacestaticmethods
+Absztrakt osztályok és interfészek;Absztrakt metódusok implementálása felsorolásos típusokban;enumabstract
+Absztrakt osztályok és interfészek;Állapotgép;statemachine
+Absztrakt osztályok és interfészek;Absztrakt osztályok és interfészek - összefoglalás;summaryabstractinterface
+Haladó OO elvek;Polimorfizmus;polymorphism
+Haladó OO elvek;Dinamikus kötés;virtualmethod
+Haladó OO elvek;is-a has-a kapcsolatok;isahasa
+Haladó OO elvek;Haladó OO elvek - összefoglalás;summaryadvancedooprinciples
+Haladó kivételkezelés;Kivételkezelés;exceptions
+Haladó kivételkezelés;Saját kivétel;exceptionclass
+Haladó kivételkezelés;Multi catch;exceptionmulticatch
+Haladó kivételkezelés;Try-With-Resources szerkezet;exceptionresource
+Haladó kivételkezelés;Haladó kivételkezelés - összefoglalás;summaryadvancedexception
+Projektfeladat;Projektfeladat - Könyvtár katalógus projektfeladat;catalog
+Projektfeladat;Activity tracker projektfeladat;activity
+Java SE haladó - Bevezetés;Java SE haladó - Bevezetés;javaadvwelcome
+Belső osztályok;Belső osztályok;nestedclasses
+Kollekciók;Generikusok használata, diamond operátor;genericsusage
+Kollekciók;Az equals() és hashCode() metódusok;collectionsequalshash
+Kollekciók;List, ArrayList kontra LinkedList;collectionslist
+Kollekciók;Set;collectionsset
+Kollekciók;Queue;collectionsqueue
+Kollekciók;Map;collectionsmap
+Kollekciók;Autoboxing használata kollekcióknál;collectionsautoboxing
+Kollekciók;Kollekciók - összefoglalás;summarycollections
+Műveletek kollekciókkal;Bejárás;collectionsiterator
+Műveletek kollekciókkal;A Comparable és Comparator interfészek;collectionscomp
+Műveletek kollekciókkal;Keresés;searching
+Műveletek kollekciókkal;Rendezés;sorting
+Műveletek kollekciókkal;Collections osztály (keresésen, rendezésen felüli metódusok);collectionsclass
+Műveletek kollekciókkal;A clone() metódus, deep clone;clone
+Műveletek kollekciókkal;Műveletek kollekciókkal - összefoglalás;summarycollectionsoperations
+Lambda kifejezések és streamek;Bevezetés a lambda kifejezések használatába;lambda
+Lambda kifejezések és streamek;Bevezetés a lambda kifejezések használatába - gyakorlat;lambdademo
+Lambda kifejezések és streamek;Bevezetés az Optional osztály használatába;optional
+Lambda kifejezések és streamek;Bevezetés a streamek használatába;streams
+Lambda kifejezések és streamek;Bevezetés a streamek használatába - gyakorlat - komplex példa;streams-demo1
+Lambda kifejezések és streamek;Bevezetés a streamek használatába - gyakorlat - források;streams-demo2
+Lambda kifejezések és streamek;Bevezetés a streamek használatába - gyakorlat - közbülső és lezáró műveletek;streams-demo3
+Lambda kifejezések és streamek;Programozási tételek streamek használatával - gyakorlati feladatok;streamsalgorithms
+Lambda kifejezések és streamek;Programozási tételek streamek használatával - megoldás;streamsalgorithms-demo
+Lambda kifejezések és streamek;Bevezetés a lambda kifejezések használatába;lambdaintro
+Lambda kifejezések és streamek;Optional használata;lambdaoptional
+Lambda kifejezések és streamek;Comparator módosítások;lambdacomparator
+Lambda kifejezések és streamek;Streamek;lambdastreams
+Lambda kifejezések és streamek;Intermediate műveletek;lambdaintermediate
+Lambda kifejezések és streamek;Primitívek használata streamekben;lambdaprimitives
+Lambda kifejezések és streamek;Collectors;lambdacollectors
+Lambda kifejezések és streamek;Lambda kifejezések és streamek - összefoglalás;summarylambdastreams
+Dátum és időkezelés;Új típusok, LocalDate, LocalTime, parse;datenewtypes
+Dátum és időkezelés;Period;dateperiod
+Dátum és időkezelés;Duration;dateduration
+Dátum és időkezelés;Időzónák és téli-nyári időszámítás;datedaylight
+Dátum és időkezelés;Instant osztály;dateinstant
+Dátum és időkezelés;Clock osztály;dateclock
+Dátum és időkezelés;Régi dátum- és időkezeléssel kapcsolatos típusok;dateoldtypes
+További osztályok és többnyelvű alkalmazások;Reguláris kifejezések;formatlocaleregexp
+További osztályok és többnyelvű alkalmazások;Locale osztály nyelv megadására;formatlocale
+További osztályok és többnyelvű alkalmazások;NumberFormat osztály számok formázására;formatnumberformat
+További osztályok és többnyelvű alkalmazások;ResourceBundle osztály nyelvi fordítások tárolására;formatlocalebundle
+További osztályok és többnyelvű alkalmazások;MessageFormat paraméterezett nyelvi fordítások használatára;formatlocalemessage
+További osztályok és többnyelvű alkalmazások;Nagy számok kezelése;bigdecimal
+Haladó fájlkezelés;Szöveges állomány beolvasása;ioreadstring
+Haladó fájlkezelés;String kiírása szöveges állományba;iowritestring
+Haladó fájlkezelés;Bájtok beolvasása fájlból és kiírása fájlba;ioreadwritebytes
+Haladó fájlkezelés;String olvasása Readerrel;ioreader
+Haladó fájlkezelés;String írása Writerrel;iowriter
+Haladó fájlkezelés;Különböző típusok írása PrintWriterrel;ioprintwriter
+Haladó fájlkezelés;Kiírás Stringbe StringWriterrel;iostringwriter
+Haladó fájlkezelés;Bájtok olvasása InputStreammel;ioreadbytes
+Haladó fájlkezelés;String olvasása classpath-ról;ioreaderclasspath
+Haladó fájlkezelés;Bájtok írása OutputStreammel;iowritebytes
+Haladó fájlkezelés;Adatok írása OutputStreamre és olvasás;iodatastream
+Haladó fájlkezelés;Bájtok írása tömörítéssel;iozip
+Haladó fájlkezelés;Konvertálás a típusok között;ioconvert
+Haladó fájlkezelés;Files osztály használata;iofiles
+Haladó fájlkezelés;Fájlkezelés tesztelése;iofilestest
+Haladó fájlkezelés;Fájl olvasása Scannerrel;filescanner
+Haladó fájlkezelés;Properties állományok;properties
+Generikusok használata;Generikus osztályok;genericclass
+Generikusok használata;Generikus interfészek;genericinterface
+Generikusok használata;Generikus metódusok;genericmethod
+Reflection;Bevezetés a reflection használatába;reflectionintro
+Reflection;Osztályokkal kapcsolatos információk lekérdezése reflectionnel;reflectionclasses
+Reflection;Attribútumok reflectionnel;reflectionattributes
+Reflection;Metódusok kezelése reflectionnel;reflectionmethods
+Reflection;Konstruktorok kezelése reflectionnel;reflectionconstructors
+Reflection;Osztály referencia a neve alapján;reflectionforname
+Reflection;Generikusok és tömbök használata reflectionnel;reflectiongenerics
+Reflection;Dynamic Proxy;dynamicproxy
+Reflection;Osztálybetöltés;classloader
+Annotációk;Bevezetés az annotációk használatába;annotations
+Annotációk;Részletesen az annotációkról;annotationsdetails
+Annotációk;Ismételhető annotációk;annotationsrepeating
+JVM és osztálykönyvtárak;JVM;jvm
+JVM és osztálykönyvtárak;Third party library-k;thirdparty
+JVM és osztálykönyvtárak;Naplózás;logging
+Projektfeladat;Timesheet projektfeladat;timesheet
+Tervezési minták és állapottér reprezentáció;Bevezetés a tervezési minták használatába;dpintro
+Tervezési minták és állapottér reprezentáció;S.O.L.I.D. elvek;solid
+Tervezési minták és állapottér reprezentáció;Singleton tervezési minta;singleton
+Tervezési minták és állapottér reprezentáció;Builder tervezési minta;builder
+Tervezési minták és állapottér reprezentáció;Template method tervezési minta;templatemethod
+Tervezési minták és állapottér reprezentáció;Simple factory tervezési minta;simplefactory
+Tervezési minták és állapottér reprezentáció;Állapottér reprezentáció;statespace
+Projektfeladat;Projektfeladat (Aukciós portál);auctionportal
+Grafikus felhasználói felületek;Swing;swing
+Grafikus felhasználói felületek;JavaFX;javafx
+Párhuzamosság;Szálak;concurrencythreads
+Párhuzamosság;Executorok;concurrencyexecutors
+Párhuzamosság;Szinkronizálás;concurrencysync
+Haladó párhuzamosság;CyclicBarrier és ForkJoinPool;concurrencyapi
+Bevezetés a Java 8 újdonságaiba;Bevezetés;java8welcome
+Bevezetés a Java 8 újdonságaiba;Újdonságok Java 8-tól;java8intro
+Interfészek;Default interfész metódusok;interfacedefaultmethods
+Interfészek;Statikus interfész metódusok;interfacestaticmethods
+Lambda kifejezések;Bevezetés a lambda kifejezések használatába;lambdaintro
+Lambda kifejezések;Optional használata;lambdaoptional
+Lambda kifejezések;Comparator módosítások;lambdacomparator
+Streamek;Streamek;lambdastreams
+Streamek;Intermediate műveletek;lambdaintermediate
+Streamek;Primitívek használata streamekben;lambdaprimitives
+Streamek;Collectors;lambdacollectors
+Streamek;Párhuzamos streamek;lambdaparallel
+Dátum- és időkezelés;Új típusok, LocalDate, LocalTime, parse;datenewtypes
+Dátum- és időkezelés;Period;dateperiod
+Dátum- és időkezelés;Duration;dateduration
+Dátum- és időkezelés;Időzónák és téli-nyári időszámítás;datedaylight
+Dátum- és időkezelés;Instant osztály;dateinstant
+Dátum- és időkezelés;Clock osztály;dateclock
+További Java 8 újdonságok;Collections Framework módosítások;java8collection
+További Java 8 újdonságok;Fájlkezelés;java8io
+További Java 8 újdonságok;Annotációk;java8annotations
+További Java 8 újdonságok;Párhuzamosság;java8concurrency
+További Java 8 újdonságok;Párhuzamosság - CompletableFuture;completablefuture
+További Java 8 újdonságok;További apróságok;java8misc

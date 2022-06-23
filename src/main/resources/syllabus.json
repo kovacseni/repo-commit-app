@@ -1,0 +1,2425 @@
+{
+  "weeks": [
+    {
+      "name": "Bevezetés a nyelvi eszközökbe",
+      "name-en": "Java language elements",
+      "days": [
+        {
+          "title": "Java SE alapok - Bevezetés",
+          "title-en": "Java SE basics - Introduction",
+          "lessons": [
+            {
+              "id": "javabscwelcome",
+              "title": "Java SE alapok - Bevezetés",
+              "title-en": "Java SE basics - Introduction",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Eszközkészlet",
+          "title-en": "Tools",
+          "lessons": [
+            {
+              "id": "background",
+              "title": "Java történeti háttér",
+              "title-en": "Java history",
+              "tags": ["szoftverkrízis", "objektumorientált programozás", "Sun", "James Gosling", "Oracle", "célkitűzések", "Java jelene", "OpenJDK", "Oracle Java SE JDK", "AdoptOpenJDK"],
+              "video": "java-se-module01-lesson01.mp4",
+              "length": "00:03:13"
+            },
+            {
+              "id": "installjdk",
+              "title": "Oracle JDK telepítése",
+              "title-en": "Installing JDK",
+              "tags": ["JDK"],
+              "video": "java-se-module01-lesson01p5-lab.mp4",
+              "length": "00:03:35",
+              "skip-slides": true
+            },
+            {
+              "id": "multiplejdk",
+              "title": "Több JDK egy gépen",
+              "title-en": "Multiple JDK versions on one computer",
+              "skip-slides": true
+            },
+            {
+              "id": "introjdk",
+              "title": "Java platform",
+              "title-en": "Java platform",
+              "tags": ["imperatív", "forráskód", "bájtkód", "fordítás", "Java Virtual Machine", "JVM", "JRE", "JDK", "platformfüggetlenség"],
+              "video": "java-se-module01-lesson02.mp4",
+              "length": "00:04:30"
+            },
+            {
+              "id": "intromaven",
+              "title": "Maven",
+              "title-en": "Maven",
+              "tags": ["projektstruktúra", "build", "jar", "függőség", "dependencies", "könyvtár", "convention over configuration", "erőforrás állományok", "automatikus tesztesetek", "pom.xml", "resources", "groupId", "artifactId", "version",
+              "verziószám", "karakterkódolás", "UTF-8"],
+              "video": "java-se-module01-lesson03.mp4",
+              "length": "00:07:08"
+            },
+            {
+              "id": "mavenproxy",
+              "title": "Maven használata proxy mögött",
+              "title-en": "Using Maven on a computer with proxy",
+              "tags": ["proxy"],
+              "skip-slides": true
+            },
+            {
+              "id": "introide",
+              "title": "IDE",
+              "title-en": "IDE",
+              "tags": [
+                "IDEA",
+                "NetBeans",
+                "Eclipse",
+                "projekt",
+                "project",
+                "syntax highlight",
+                "kódkiegészítés",
+                "code completion",
+                "billentyűkombináció",
+                "hotkeys"
+              ],
+              "video": "java-se-module01-lesson04.mp4",
+              "length": "00:08:26"
+            },
+            {
+              "id": "introgit",
+              "title": "Git használata az IDE-ben",
+              "title-en": "Using GIT in IDE",
+              "tags": ["clone", "commit", "pull", "push", "revert", "diff", ".gitignore", ".idea", ".iml"],
+              "video": "java-se-module01-lesson05.mp4",
+              "length": "00:07:15"
+            },
+            {
+              "id": "introgithub",
+              "title": "Feltöltés GitHubra",
+              "title-en": "Push to GitHub",
+              "tags": ["push"],
+              "video": "java-se-module01-lesson05p5.mp4",
+              "length": "00:03:58",
+              "skip-slides": true
+            },
+            {
+              "id": "javafaq",
+              "title": "Gyakori kérdések a Javaval kapcsolatosan",
+              "title-en": "Frequently asked questions according to Java",
+              "skip-slides": true
+            },
+            {
+              "id": "summarytools",
+              "title": "Eszközkészlet - összefoglalás",
+              "title-en": "Tools - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Bevezetés a Java osztályok használatába",
+          "title-en": "Introduction to the world of Java classes",
+          "lessons": [
+            {
+              "id": "classstructureio",
+              "title": "Kiírás és beolvasás konzolról",
+              "title-en": "Working with console",
+              "tags": ["csomag", "package", "class", "osztály", "blokk", "metódus", "method", "deklarációs utasítások", "main", "System.out.println", "String", "változó", "változódeklaráció", "int", "Scanner", "példányosítás", "objektum",
+                "import", "konkatenálás", "konkatenáció", "összeadás", "szigorú típusosság"],
+              "video": "java-se-module02-lesson03-1.mp4",
+              "length": "00:12:54"
+            },
+            {
+              "id": "classstructureattributes",
+              "title": "Objektumok és attribútumok",
+              "title-en": "Objects and attributes",
+              "tags": ["attribútum", "attribute", "objektum", "object", "példány", "instance", "állapot", "state", "new"],
+              "video": "java-se-module02-lesson03-2.mp4",
+              "length": "00:12:20"
+            },
+            {
+              "id": "classstructuremethods",
+              "title": "Metódusok",
+              "title-en": "Methods",
+              "tags": ["paraméter", "visszatérési érték", "void", "return", "lokális változó", "elfedés", "getter", "setter", "egységbezárás", "encapsulation", "this", "módosító szavak", "láthatósági módosító", "public", "private", "information hiding", "package private"],
+              "video": "java-se-module02-lesson03-3.mp4",
+              "length": "00:14:58"
+            },
+            {
+              "id": "classstructureconstructors",
+              "title": "Konstruktorok",
+              "title-en": "Constructor",
+              "tags": ["konstructor", "constructor", "default konstruktor", "paraméter nélküli default konstruktor"],
+              "video": "java-se-module02-lesson03-4.mp4",
+              "length": "00:07:56"
+            },
+            {
+              "id": "classstructureintegrate",
+              "title": "UML, példányok konzol íráskor/olvasáskor",
+              "title-en": "UML, instances with console read/write",
+              "tags": ["UML", "osztálydiagram"],
+              "video": "java-se-module02-lesson03-5.mp4",
+              "length": "00:07:31"
+            },
+            {
+              "id": "summaryclasses",
+              "title": "Bevezetés a Java osztályok használatába - összefoglalás",
+              "title-en": "Introduction to the world of Java classes - summary",
+              "skip-slides": true
+            }
+            ]
+        },
+        {
+          "title": "A nyelv építőkövei",
+          "title-en": "Bricks of the Java language",
+          "lessons": [
+            {
+              "id": "conventions",
+              "title": "Kódolási konvenciók",
+              "title-en": "Coding conventions",
+              "tags": ["behúzás", "indent", "karakterkészlet", "kulcsszavak", "elnevezési konvenciók", "megjegyzések", "SonarLint"],
+              "video": "java-se-module02-lesson04.mp4",
+              "length": "00:07:23"
+            },
+            {
+              "id": "sonarlint",
+              "title": "SonarLint",
+              "title-en": "SonarLint",
+              "skip-slides": true
+            },
+            {
+              "id": "localvariables",
+              "title": "Literálok és lokális változók",
+              "title-en": "Literals and local variables",
+              "tags": ["logikai típus", "primitív típus", "referencia típusú változó", "implicit", "boolean", "true", "false", "egész szám", "int", "lebegőpontos szám", "double", "null", "String",
+                "típuskonverzió", "típuskényszerítés", "implicit típuskonverzió", "explicit típuskonverzió", "cast", "változó láthatósága", "változó élettartama", "szemétgyűjtő mechanizmus", "garbage collector"],
+              "video": "java-se-module02-lesson05.mp4",
+              "length": "00:10:51"
+            },
+            {
+              "id": "statements",
+              "title": "Kifejezések és utasítások",
+              "title-en": "Expressions and statements",
+              "tags": ["operátor", "operator", "operandus", "operand", "zárójelezés", "equals()"],
+              "video": "java-se-module02-lesson06.mp4",
+              "length": "00:12:50"
+            },
+            {
+              "id": "packages",
+              "title": "Csomagok",
+              "title-en": "Packages",
+              "tags": ["névütközés", "package", "import", "wildcard", "package private", "java.lang", "default package"],
+              "video": "java-se-module02-lesson01.mp4",
+              "length": "00:07:27"
+            },
+            {
+              "id": "javaapi",
+              "title": "Java API",
+              "title-en": "Java API",
+              "tags": ["osztálykönyvtár", "class library", "JavaDoc", "java.lang"],
+              "video": "java-se-module02-lesson02.mp4",
+              "length": "00:03:54"
+            },
+            {
+              "id": "distjar",
+              "title": "JAR állomány",
+              "title-en": "JAR packaging",
+              "tags": ["classpath", "Maven", "futtatható JAR", "mvn", "clean", "package", "-classpath", "-jar", "target"],
+              "video": "java-se-module08-lesson05.mp4",
+              "length": "00:10:53"
+            },
+            {
+              "id": "stringtype",
+              "title": "Szöveges típus",
+              "title-en": "String type",
+              "tags": ["konkatenáció", "karakterlánc", "üres karakterlánc", "hossz", "indexOf()", "length()", "substring()"],
+              "video": "java-se-module02-lesson07.mp4",
+              "length": "00:05:47"
+            },
+            {
+              "id": "linebreak",
+              "title": "Sortörés kezelése",
+              "title-en": "Using line break",
+              "tags": [],
+              "video": "linebreak.wmv",
+              "length": "00:07:48"
+            },
+            {
+              "id": "introdate",
+              "title": "Dátum és időkezelés alapok",
+              "title-en": "Introduction to representing date and time",
+              "tags": ["LocalDate", "LocalTime", "LocalDateTime", "dátum", "idő"],
+              "video": "java-se-module02-lesson07p5.mp4",
+              "length": "00:08:19"
+            },
+            {
+              "id": "introcontrol",
+              "title": "Bevezetés a vezérlési szerkezetekbe",
+              "title-en": "Introduction to control statements",
+              "tags": ["if", "else", "for", "ciklus", "iteráció", "elágazás", "feltétel", "folyamatábra", "flowchart"],
+              "video": "java-se-module02-lesson08.mp4",
+              "length": "00:06:31"
+            },
+            {
+              "id": "summaryintrojava",
+              "title": "A nyelv építőkövei - összefoglalás",
+              "title-en": "Java language elements - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Bonyolultabb típusok",
+          "title-en": "Complex types",
+          "lessons": [
+            {
+              "id": "array",
+              "title": "Tömbök",
+              "title-en": "Arrays",
+              "tags": ["tömb literál", "indexelés", "indexhatár ellenőrzés", "length", "arraycopy()", "bejárás"],
+              "video": "java-se-module03-lesson01.mp4",
+              "length": "00:06:48"
+            },
+            {
+              "id": "cmdarguments",
+              "title": "Parancssori paraméterek",
+              "title-en": "Command line arguments",
+              "tags": ["main()"],
+              "video": "java-se-module03-lesson01p5.mp4",
+              "length": "00:06:47"
+            },
+            {
+              "id": "arrayofarrays",
+              "title": "Tömbök tömbje",
+              "title-en": "Array of arrays",
+              "tags": ["mátrix", "háromszögmátrix", "többdimenziós tömb"],
+              "video": "java-se-module03-lesson02.mp4",
+              "length": "00:02:42"
+            },
+            {
+              "id": "arrays",
+              "title": "Tömbök kezelése",
+              "title-en": "Arrays class",
+              "tags": ["Arrays.toString()", "Arrays.asList()", "Arrays.equals()", "Arrays.deepEquals()",
+              "rendezés", "sort"],
+              "video": "java-se-module03-lesson03.mp4",
+              "length": "00:06:49"
+            },
+            {
+              "id": "arraylist",
+              "title": "Lista",
+              "title-en": "List collection type",
+              "tags": ["indexelés", "generikus típus", "diamond operátor", "bejárás"],
+              "video": "java-se-module03-lesson04.mp4",
+              "length": "00:13:08"
+            },
+            {
+              "id": "aslist",
+              "title": "Lista létrehozása",
+              "title-en": "Create a list",
+              "tags": ["módosítható lista", "fix méretű lista"],
+              "video": "aslist.wmv",
+              "length": "00:05:29"
+            },
+            {
+              "id": "looptypes",
+              "title": "Ciklusok fajtái",
+              "title-en": "Loop types",
+              "tags": [],
+              "video": "looptypes.wmv",
+              "length": "00:11:46"
+            },
+            {
+              "id": "looptypesmodify",
+              "title": "Módosítás bejáráskor",
+              "title-en": "Modify during iterate",
+              "tags": [],
+              "video": "looptypesmodify.wmv",
+              "length": "00:09:15"
+            },
+            {
+              "id": "debug",
+              "title": "Debug",
+              "title-en": "Debugging",
+              "tags": ["breakpoint"],
+              "video": "java-se-module06-lesson02.mp4",
+              "length": "00:06:31"
+            },
+            {
+              "id": "finalmodifier",
+              "title": "Konstans értékek használata",
+              "title-en": "Constant values",
+              "tags": ["final", "static", "static import"],
+              "video": "java-se-module03-lesson05.mp4",
+              "length": "00:06:50"
+            },
+            {
+              "id": "math",
+              "title": "Math és Random osztály",
+              "title-en": "Math and Random class",
+              "tags": ["véletlenszám", "pseudorandom", "seed", "kerekítések", "szögfüggvények", "abszolútérték"],
+              "video": "java-se-module03-lesson06.mp4",
+              "length": "00:05:13"
+            },
+            {
+              "id": "summarycomplextypes",
+              "title": "Bonyolultabb típusok - összefoglalás",
+              "title-en": "Complex types - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Részletesebben az osztályokról és objektumokról",
+          "title-en": "More details of classes and objects",
+          "lessons": [
+            {
+              "id": "objects",
+              "title": "Objektumok",
+              "title-en": "Objects",
+              "tags": ["példányosítás", "példány", "instance", "állapot", "state", "null"],
+              "video": "java-se-module04-lesson01.mp4",
+              "length": "00:08:07"
+            },
+            {
+              "id": "attributes",
+              "title": "Bevezetés az attribútumok használatába",
+              "title-en": "Using attributes",
+              "tags": ["állapot", "state", "láthatóság", "getter", "setter", "alapértelmezett érték"],
+              "video": "java-se-module04-lesson02.mp4",
+              "length": "00:11:00"
+            },
+            {
+              "id": "introconstructors",
+              "title": "Bevezetés a konstruktorok használatába",
+              "title-en": "Constructors",
+              "tags": ["default constructor", "paraméterek" , "formális paraméterek", "aktuális paraméterek"],
+              "video": "java-se-module04-lesson03.mp4",
+              "length": "00:03:22"
+            },
+            {
+              "id": "intromethods",
+              "title": "Bevezetés a metódusok használatába",
+              "title-en": "Methods",
+              "tags": ["szignatúra", "paraméterek" , "formális paraméterek", "aktuális paraméterek", "elfedés", "toString()"],
+              "video": "java-se-module04-lesson04.mp4",
+              "length": "00:08:48"
+            },
+            {
+              "id": "references",
+              "title": "Referenciák",
+              "title-en": "References",
+              "tags": ["heap", "referencia azonosság", "this", "értékmásolás szerinti paraméterátadás"],
+              "video": "java-se-module04-lesson05.mp4",
+              "length": "00:09:57"
+            },
+            {
+              "id": "composition",
+              "title": "Kompozíció",
+              "title-en": "Composition",
+              "tags": [],
+              "video": "composition.wmv",
+              "length": "00:10:30"
+            },
+            {
+              "id": "compositionlist",
+              "title": "Kompozíció listával",
+              "title-en": "One-to-many composition",
+              "tags": [],
+              "video": "compositionlist.wmv",
+              "length": "00:12:50"
+            },
+            {
+              "id": "summaryintroclassesobjects",
+              "title": "Részletesebben az osztályokról és objektumokról - összefoglalás",
+              "title-en": "More details of classes and objects - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "lessons": [
+            {
+              "id": "meetingrooms",
+              "title": "Projektfeladat - Tárgyaló nyilvántartás",
+              "title-en": "Project - Meeting rooms"
+            }
+          ],
+          "title": "Projektfeladat",
+          "title-en": "Project"
+        }
+      ]
+    },
+    {
+      "name": "A Java nyelv részletes megismerése",
+      "name-en": "Java language",
+      "days": [
+        {
+          "title": "Típusok és operátorok",
+          "title-en": "Types and operators",
+          "lessons": [
+            {
+              "id": "literals",
+              "title": "Literálok",
+              "title-en": "Literals",
+              "tags": ["bináris forma", "oktális forma", "hexadecimális forma", "karakter",
+                "karakterkódolás", "encoding", "speciális karakterek", "escape karakterek"],
+              "video": "java-se-module05-lesson01.mp4",
+              "length": "00:08:21"
+            },
+            {
+              "id": "primitivetypes",
+              "title": "Egyszerű típusok",
+              "title-en": "Primitive types",
+              "tags": ["char", "byte", "sort", "long", "float", "csomagolóosztály", "burkolóosztály", "autoboxing", "autounboxing"],
+              "video": "java-se-module05-lesson02.mp4",
+              "length": "00:09:34"
+            },
+            {
+              "id": "chars",
+              "title": "Karakterek",
+              "title-en": "Character type",
+              "tags": ["karakterkódolás"],
+              "video": "chars.wmv",
+              "length": "00:13:07"
+            },
+            {
+              "id": "enumtype",
+              "title": "Felsorolásos típus",
+              "title-en": "Enumeration type",
+              "tags": ["enum", "Enumeration type", "ordinal()", "valueOf()", "values()", "name()"],
+              "video": "java-se-module05-lesson04.mp4",
+              "length": "00:09:34"
+            },
+            {
+              "id": "operators",
+              "title": "Operátorok",
+              "title-en": "Operators",
+              "tags": ["operátor precedencia", "precedencia táblázat", "bitműveletek", "logikai operátorok", "rövidzár"],
+              "video": "java-se-module05-lesson05.mp4",
+              "length": "00:13:54"
+            },
+            {
+              "id": "mathproblems",
+              "title": "Oszthatóság vizsgálata",
+              "title-en": "Testing divisibility",
+              "tags": ["oszthatóság"],
+              "skip-slides": true
+            },
+            {
+              "id": "typeconversion",
+              "title": "Típuskonverzió",
+              "title-en": "Casting",
+              "tags": ["explicit cast", "implicit cast" ],
+              "video": "java-se-module05-lesson06.mp4",
+              "length": "00:05:17"
+            },
+            {
+              "id": "numbers",
+              "title": "Egész és lebegőpontos számok",
+              "title-en": "Integers and floating point numbers",
+              "tags": ["osztás egésszel", "lebegőpontos számok összehasonlítása"],
+              "video": "java-se-module05-lesson07.mp4",
+              "length": "00:07:29"
+            },
+            {
+              "id": "conversions",
+              "title": "Különbségek a típuskonverzió, boxing és String műveletek között",
+              "title-en": "Differences between cast, boxing and parse/format",
+              "tags": [],
+              "video": "conversions.wmv",
+              "length": "00:09:24"
+            },
+            {
+              "id": "summarytypesoperators",
+              "title": "Típusok és operátorok - összefoglalás",
+              "title-en": "Types and operators - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Unit tesztelés JUnittal",
+          "title-en": "Unit testing with JUnit",
+          "lessons": [
+            {
+              "id": "introjunit",
+              "title": "Unit tesztelés JUnittal",
+              "title-en": "Unit testing with JUnit framework",
+              "tags": ["Given - when - then", "assert", "Hamcrest", "tesztlefedettség", "coverage"],
+              "video": "java-se-module06-lesson01.mp4",
+              "length": "00:13:50",
+              "skip-tests": true
+            },
+            {
+              "id": "junit5",
+              "title": "JUnit 5",
+              "title-en": "JUnit 5",
+              "tags": ["JUnit 5"],
+              "video": "java-se-module06-lesson01p5.mp4",
+              "length": "00:03:52",
+              "skip-tests": true
+            },
+            {
+              "id": "junit5assert",
+              "title": "JUnit assert metódusok",
+              "title-en": "JUnit 5 assert methods",
+              "tags": [],
+              "video": "junit5assert.wmv",
+              "length": "00:12:25",
+              "skip-tests": true
+            },
+            {
+              "id": "junit5fixture",
+              "title": "Tesztesetek életciklusa",
+              "title-en": "JUnit 5 test lifecycle",
+              "tags": [],
+              "video": "junit5fixture.wmv",
+              "length": "00:07:23",
+              "skip-tests": true
+            },
+            {
+              "id": "junit4and5",
+              "title": "JUnit 4 és JUnit 5 közötti különbségek",
+              "title-en": "Difference between JUnit 4 and 5",
+              "tags": ["JUnit versions comparison"],
+              "skip-slides": true
+            },
+            {
+              "id": "summaryjunit",
+              "title": "Unit tesztelés JUnittal - összefoglalás",
+              "title-en": "Unit testing with JUnit - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Részletesen a szöveges típusról",
+          "title-en": "Thoroughly of handling texts",
+          "lessons": [
+            {
+              "id": "stringbasic",
+              "title": "String alapok",
+              "title-en": "String features",
+              "tags": ["immutable", "string pool", "intern pool", "intern()"],
+              "video": "java-se-module16-lesson01.mp4",
+              "length": "00:14:12"
+            },
+            {
+              "id": "stringconcat",
+              "title": "Konkatenáció",
+              "title-en": "String concatenation",
+              "tags": ["concat()"],
+              "video": "java-se-module16-lesson02.mp4",
+              "length": "00:09:36"
+
+            },
+            {
+              "id": "stringmethods",
+              "title": "Főbb String metódusok",
+              "title-en": "String methods",
+              "tags": ["length()", "charAt()", "indexOf()", "substring()", "toLowerCase()", "toUpperCase()", "equals()", "equalsIgnoreCase()", "startsWith()", "endsWith()", "contains()", "replace()", "trim()", "split()", "metódus láncolás", "method chaining"],
+              "video": "java-se-module16-lesson03.mp4",
+              "length": "00:13:59"
+
+            },
+            {
+              "id": "stringbuilder",
+              "title": "StringBuilder",
+              "title-en": "StringBuilder class",
+              "tags": ["mutable", "append()", "toString()", "charAt()", "indexOf()", "length()", "substring()", "insert()", "delete()", "deleteCharAt()", "reverse()", "StringBuffer"],
+              "video": "java-se-module16-lesson04.mp4",
+              "length": "00:13:28"
+            },
+            {
+              "id": "stringseparate",
+              "title": "Szövegek elválasztása vesszővel",
+              "title-en": "Separation of texts with comma",
+              "tags": [],
+              "skip-slides": true
+            },
+            {
+              "id": "stringscanner",
+              "title": "Scanner",
+              "title-en": "Scanner class",
+              "tags": ["next()", "hasNext()", "delimiter", "useDelimiter()", "nextLine()", "hasNextLine()"],
+              "video": "java-se-module16-lesson05.mp4",
+              "length": "00:09:34"
+
+            },
+            {
+              "id": "formatlocaleprintf",
+              "title": "printf",
+              "title-en": "printf",
+              "tags": ["PrintWriter", "Formatter", "konverziós karakter"],
+              "video": "java-se-module17-lesson05.mp4",
+              "length": "00:12:07"
+            },
+            {
+              "id": "summarystring",
+              "title": "Részletesen a szöveges típusról - összefoglalás",
+              "title-en": "Thoroughly of handling texts - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Vezérlési szerkezetek",
+          "title-en": "Control statements",
+          "lessons": [
+            {
+              "id": "controlselection",
+              "title": "Vezérlési szerkezetek és az elágazás",
+              "title-en": "Control statements and selection",
+			  "tags": ["szekvencia", "szelekció", "elágazás", "iteráció", "ciklus"],
+              "video": "java-se-module06-lesson03.mp4",
+              "length": "00:09:08"
+            },
+            {
+              "id": "controliteration",
+              "title": "Ciklusok",
+              "title-en": "Iteration, loops",
+			  "tags": ["while", "do-while", "for", "for-each"],
+              "video": "java-se-module06-lesson04.mp4",
+              "length": "00:09:49"
+            },
+            {
+              "id": "controladvanced",
+              "title": "Haladó vezérlési szerkezetek",
+              "title-en": "Advanced control statements, break, continue",
+			  "tags": ["break", "continue"],
+              "video": "java-se-module06-lesson05.mp4",
+              "length": "00:06:34"
+            },
+            {
+              "id": "summarycontrolstatements",
+              "title": "Vezérlési szerkezetek - összefoglalás",
+              "title-en": "Control statements - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Bevezetés a kivétel- és fájlkezelésbe",
+          "title-en": "Introduction to exception and file handling",
+          "lessons": [
+            {
+              "id": "introexceptionfirstexception",
+              "title": "Első kivétel",
+              "title-en": "First exception",
+              "tags": ["kivétel", "stacktrace"],
+              "video": "introexceptionfirstexception.wmv",
+              "length": "00:07:04"
+            },
+            {
+              "id": "introexceptionmoreexceptions",
+              "title": "További kivételek",
+              "title-en": "More exceptions",
+              "tags": [],
+              "video": "introexceptionmoreexceptions.wmv",
+              "length": "00:05:56"
+            },
+            {
+              "id": "introexceptiontrace",
+              "title": "Kivétel a hívási láncban",
+              "title-en": "Exception in method call",
+              "tags": [],
+              "video": "introexceptiontrace.wmv",
+              "length": "00:07:10"
+            },
+            {
+              "id": "introexceptiontrycatch",
+              "title": "Kivétel kezelése",
+              "title-en": "Handling exception",
+              "tags": ["nem kötelezően kezelendő kivétel", "try-catch", "unchecked"],
+              "video": "introexceptiontrycatch.wmv",
+              "length": "00:12:12"
+            },
+            {
+              "id": "introexceptiontrycatchtrace",
+              "title": "Kivétel kezelése a hívási láncban",
+              "title-en": "Handling exception thrown in method call",
+              "tags": [],
+              "video": "introexceptiontrycatchtrace.wmv",
+              "length": "00:04:17"
+            },
+            {
+              "id": "introexceptionthrow",
+              "title": "Kivétel eldobása",
+              "title-en": "Throwing an exception",
+              "tags": [],
+              "video": "introexceptionthrow.wmv",
+              "length": "00:06:54"
+            },
+            {
+              "id": "introexceptionthrowjunit4",
+              "title": "Kivételkezelés tesztelése JUnit 4 használatával",
+              "title-en": "Testing exceptions with JUnit 4",
+              "tags": [],
+              "video": "introexceptionthrowjunit4.wmv",
+              "length": "00:10:13",
+              "skip-tests": true
+            },
+            {
+              "id": "introexceptionthrowjunit5",
+              "title": "Kivételkezelés tesztelése JUnit 5 használatával",
+              "title-en": "Testing exceptions with JUnit 5",
+              "tags": [],
+              "video": "introexceptionthrowjunit5.wmv",
+              "length": "00:04:28",
+              "skip-tests": true
+            },
+            {
+              "id": "introexceptionreadfile",
+              "title": "Fájl beolvasása",
+              "title-en": "Reading file",
+              "tags": ["kötelezően kezelendő kivétel", "checked"],
+              "video": "introexceptionreadfile.wmv",
+              "length": "00:05:01"
+            },
+            {
+              "id": "introexceptioncheckedtrace",
+              "title": "Kötelezően kezelendő kivétel a hívási láncban",
+              "title-en": "Handling checked exception thrown in method call",
+              "tags": ["kivétel továbbdobása"],
+              "video": "introexceptioncheckedtrace.wmv",
+              "length": "00:04:45"
+            },
+            {
+              "id": "introexceptioncause",
+              "title": "Kivétel becsomagolása",
+              "title-en": "Wrapping an exception",
+              "tags": [],
+              "video": "introexceptioncause.wmv",
+              "length": "00:07:57"
+            },
+            {
+              "id": "introexceptionreadfiletestjunit4",
+              "title": "Fájlbeolvasás tesztelése JUnit 4 használatával",
+              "title-en": "Testing reading file with JUnit 4",
+              "tags": [],
+              "video": "introexceptionreadfiletestjunit4.wmv",
+              "length": "00:04:19",
+              "skip-tests": true
+            },
+            {
+              "id": "introexceptionreadfiletestjunit5",
+              "title": "Fájlbeolvasás tesztelése JUnit 5 használatával",
+              "title-en": "Testing reading file with JUnit 5",
+              "tags": [],
+              "video": "introexceptionreadfiletestjunit5.wmv",
+              "length": "00:03:14",
+              "skip-tests": true
+            },
+            {
+              "id": "introexceptionwritefile",
+              "title": "Fájl írása",
+              "title-en": "Writing a file",
+              "tags": [],
+              "video": "introexceptionwritefile.wmv",
+              "length": "00:02:50"
+            },
+            {
+              "id": "introexceptionwritefiletestjunit4",
+              "title": "Fájl írásának tesztelése JUnit 4 használatával",
+              "title-en": "Testing writing file with JUnit 4",
+              "tags": [],
+              "video": "introexceptionwritefiletestjunit4.wmv",
+              "length": "00:08:56",
+              "skip-tests": true
+            },
+            {
+              "id": "introexceptionwritefiletestjunit5",
+              "title": "Fájl írásának tesztelése JUnit 5 használatával",
+              "title-en": "Testing writing file with JUnit 5",
+              "tags": [],
+              "video": "introexceptionwritefiletestjunit5.wmv",
+              "length": "00:07:37",
+              "skip-tests": true
+            },
+            {
+              "id": "introexceptionfinally",
+              "title": "A finally ág",
+              "title-en": "Finally block",
+              "tags": [],
+              "video": "introexceptionfinally.wmv",
+              "length": "00:05:31"
+            },
+            {
+              "id": "summaryintroexception",
+              "title": "Kivétel- és fájlkezelés - összefoglalás",
+              "title-en": "Exception and file handling summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Programozási tételek és egyéb algoritmusok",
+          "title-en": "Algorithms",
+          "lessons": [
+            {
+              "id": "algorithmssum",
+              "title": "Összegzés tétele",
+              "title-en": "Sum the list of numbers",
+              "tags": ["programozási tételek", "nevezetes algoritmusok"],
+              "video": "java-se-module07-lesson01.mp4",
+              "length": "00:06:06"
+            },
+            {
+              "id": "algorithmscount",
+              "title": "Számlálás tétele",
+              "title-en": "Count the elements with certain condition",
+              "tags": [],
+              "video": "java-se-module07-lesson02.mp4",
+              "length": "00:04:12"
+            },
+            {
+              "id": "algorithmsmax",
+              "title": "Szélsőérték-keresés tétele",
+              "title-en": "Find the minimum and maximum elements",
+              "tags": [],
+              "video": "java-se-module07-lesson03.mp4",
+              "length": "00:07:18"
+            },
+            {
+              "id": "algorithmsdecision",
+              "title": "Eldöntés tétele",
+              "title-en": "How many elements satisfy certain condition",
+              "tags": [],
+              "video": "java-se-module07-lesson04.mp4",
+              "length": "00:07:18"
+            },
+            {
+              "id": "algorithmsfilter",
+              "title": "Szűrés",
+              "title-en": "Filtering",
+              "tags": [],
+              "video": "java-se-module07-lesson04p3-lab.wmv",
+              "length": "00:05:43",
+              "skip-slides": true
+            },
+            {
+              "id": "algorithmstransformation",
+              "title": "Transzformáció",
+              "title-en": "Transformation",
+              "tags": [],
+              "video": "java-se-module07-lesson04p6-lab.wmv",
+              "length": "00:07:57",
+              "skip-slides": true
+            },
+            {
+              "id": "recursion",
+              "title": "Rekurzió",
+              "title-en": "Recursion",
+              "tags": ["verem"],
+              "video": "java-se-module07-lesson05.mp4",
+              "length": "00:07:31"
+            },
+            {
+              "id": "summaryalgorithms",
+              "title": "Programozási tételek és egyéb algoritmusok - összefoglalás",
+              "title-en": "Algorithms - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Projektfeladat",
+          "title-en": "Project",
+          "lessons": [
+            {
+              "id": "schoolrecords",
+              "title": "Projektfeladat - Elektronikus osztálynapló",
+              "title-en": "School records project",
+              "skip-slides": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Objektumorientáltság",
+      "name-en": "Object oriented principles",
+      "days": [
+        {
+          "title": "Attribútumok és metódusok",
+          "title-en": "Attributes and methods",
+          "lessons": [
+            {
+              "id": "immutable",
+              "title": "Immutable objektumok",
+              "title-en": "Immutable objects",
+			  "tags": ["módosíthatatlan", "állapot", "final"],
+              "video": "java-se-module09-lesson01.mp4",
+              "length": "00:10:51"
+            },
+            {
+              "id": "javabeans",
+              "title": "JavaBeans objektumok",
+              "title-en": "JavaBeans",
+			  "tags": ["information hiding", "elnevezési konvenció", "property", "getter", "setter"],
+              "video": "java-se-module09-lesson02.mp4",
+              "length": "00:07:32"
+            },
+            {
+              "id": "methodstructure",
+              "title": "Metódusok",
+              "title-en": "Methods",
+			  "tags": ["paraméter", "sorrendi kötés", "típusegyeztetés", "this", "return", "void", "metódusfej", "metódustörzs", "szignatúra", "láthatósági módosító", "visszatérési típus", "implicit paraméter"],
+              "video": "java-se-module09-lesson03.mp4",
+              "length": "00:15:11"
+            },
+            {
+              "id": "methodpass",
+              "title": "Értékmásolás szerinti paraméterátadás",
+              "title-en": "Pass by value copy",
+              "tags": ["formális paraméter", "aktuális paraméter", "értékmásolás", "visszahatás"],
+              "video": "java-se-module09-lesson03p5.mp4",
+              "length": "00:11:40"
+            },
+            {
+              "id": "methodparam",
+              "title": "Metódus paraméterek és visszatérési értékek",
+              "title-en": "Method parameters and return values",
+			  "tags": ["paraméterek ellenőrzése","boolean használata"],
+              "video": "java-se-module09-lesson04.mp4",
+              "length": "00:14:15",
+              "skip-tests": true
+            },
+            {
+              "id": "methodvarargs",
+              "title": "Változó hosszúságú paraméterlista",
+              "title-en": "Varargs",
+			  "tags": ["varags", "tömb"],
+              "video": "java-se-module09-lesson05.mp4",
+              "length": "00:08:27"
+            },
+            {
+              "id": "methodchain",
+              "title": "Metódus hívások láncolása",
+              "title-en": "Method chaining",
+			  "tags": ["builder", "this"],
+              "video": "java-se-module09-lesson06.mp4",
+              "length": "00:09:41",
+              "skip-tests": true
+            },
+            {
+              "id": "methodoverloading",
+              "title": "Metódusnév túlterhelés",
+              "title-en": "Method overloading",
+			  "tags": ["method overloading", "szignatúra", "paraméter szignatúra"],
+              "video": "java-se-module09-lesson07.mp4",
+              "length": "00:07:41"
+            },
+            {
+              "id": "staticattrmeth",
+              "title": "Statikus attribútumok és metódusok",
+              "title-en": "Static attributes and methods",
+			  "tags": ["static", "statikus import", "konstans"],
+              "video": "java-se-module09-lesson08.mp4",
+              "length": "00:13:54"
+            },
+            {
+              "id": "summaryattributesmethods",
+              "title": "Attribútumok és metódusok - összefoglalás",
+              "title-en": "Attributes and methods - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Konstruktorok és inicializátorok",
+          "title-en": "Constructors and initialization blocks",
+          "lessons": [
+            {
+              "id": "defaultconstructor",
+              "title": "Default és paraméter nélküli konstruktor",
+              "title-en": "Default and no-args constructor",
+              "tags": [],
+              "video": "java-se-module10-lesson01.mp4",
+              "length": "00:04:27"
+            },
+            {
+              "id": "constructoroverloading",
+              "title": "Konstruktor túlterhelés",
+              "title-en": "Constructor overloading",
+			  "tags": ["this()"],
+              "video": "java-se-module10-lesson02.mp4",
+              "length": "00:09:22"
+            },
+            {
+              "id": "initializer",
+              "title": "Inicializátorok",
+              "title-en": "Initialization blocks",
+			  "tags": ["statikus inicializátor"],
+              "video": "java-se-module10-lesson03.mp4",
+              "length": "00:07:30"
+            },
+            {
+              "id": "summaryconstructors",
+              "title": "Konstruktorok és inicializátorok - összefoglalás",
+              "title-en": "Constructors and initialization blocks - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Öröklődés",
+          "title-en": "Inheritance",
+          "lessons": [
+            {
+              "id": "introinheritance",
+              "title": "Öröklődés",
+              "title-en": "Inheritance",
+			  "tags": ["kiterjesztés", "extends", "Object", "faszerkezet", "is-a", "has-a", "kompozíció", "ősosztály", "szülő osztály", "leszármazott osztály"],
+              "video": "java-se-module11-lesson01.mp4",
+              "length": "00:09:48"
+            },
+            {
+              "id": "inheritanceconstructor",
+              "title": "Konstruktorok és az öröklődés viszonya",
+              "title-en": "Constructors and the inheritance",
+			  "tags": ["super()", "implicit konstruktorhívás"],
+              "video": "java-se-module11-lesson02.mp4",
+              "length": "00:08:07"
+            },
+            {
+              "id": "dynamictypes",
+              "title": "Statikus és dinamikus típus",
+              "title-en": "Static and dynamic types",
+              "tags": [],
+              "video": "dynamictypes.mp4",
+              "length": "00:12:04",
+              "skip-tests": true
+            },
+            {
+              "id": "objectclass",
+              "title": "Object ősosztály",
+              "title-en": "Object superclass",
+			  "tags": ["java.lang", "öröklődési hierarchia", "equals()", "hashCode()", "toString()"],
+              "video": "java-se-module11-lesson03.mp4",
+              "length": "00:09:46"
+            },
+            {
+              "id": "inheritanceattributes",
+              "title": "Attribútumok öröklődése",
+              "title-en": "Attributes and inheritance",
+			  "tags": ["láthatóság", "information hiding", "minősített név", "protected", "super"],
+              "video": "java-se-module11-lesson04.mp4",
+              "length": "00:07:27"
+            },
+            {
+              "id": "inheritancemethods",
+              "title": "Metódusok öröklődése",
+              "title-en": "Methods and inheritance",
+			  "tags": ["láthatóság", "override", "felülírás", "elrejtés", "kovariáns típus", "final", "@Override", "annotáció", "protected", "szignatúra"],
+              "video": "java-se-module11-lesson05.mp4",
+              "length": "00:12:26"
+            },
+            {
+              "id": "summaryinheritance",
+              "title": "Öröklődés - összefoglalás",
+              "title-en": "Inheritance - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Absztrakt osztályok és interfészek",
+          "title-en": "Abstract classes and interfaces",
+          "lessons": [
+            {
+              "id": "abstractclass",
+              "title": "Absztrakt osztályok",
+              "title-en": "Abstract classes",
+			  "tags": ["absztrakt metódus", "abstract", "példányosítás", "definíció", "implementáció"],
+              "video": "java-se-module12-lesson01.mp4",
+              "length": "00:07:49"
+            },
+            {
+              "id": "interfaces",
+              "title": "Interfészek",
+              "title-en": "Interfaces",
+			  "tags": ["interface", "marker", "implementáció"],
+              "video": "java-se-module12-lesson02.mp4",
+              "length": "00:16:32"
+            },
+            {
+              "id": "interfacerules",
+              "title": "Interfészekkel kapcsolatos szabályok",
+              "title-en": "Interface rules",
+              "tags": ["névütközés"],
+              "video": "java-se-module12-lesson02p3.mp4",
+              "length": "00:11:48"
+            },
+            {
+              "id": "interfacedependencyinversion",
+              "title": "Dependency inversion",
+              "title-en": "Dependency inversion",
+              "tags": [],
+              "video": "java-se-module12-lesson02p4.mp4",
+              "length": "00:10:51",
+              "skip-tests": true
+            },
+            {
+              "id": "interfaceextends",
+              "title": "Interfészek és az öröklődés viszonya",
+              "title-en": "Interfaces and inheritance",
+              "tags": ["extends", "többszörös öröklődés", "hálós"],
+              "video": "java-se-module12-lesson03.mp4",
+              "length": "00:08:16"
+            },
+            {
+              "id": "interfacedefaultmethods",
+              "title": "Default interfész metódusok",
+              "title-en": "Default interface methods",
+			  "tags": [],
+              "video": "java-se-module12-lesson02p5.mp4",
+              "length": "00:17:37",
+              "skip-tests": true
+            },
+            {
+              "id": "interfacestaticmethods",
+              "title": "Statikus interfész metódusok",
+              "title-en": "Static interface methods",
+              "tags": [],
+              "video": "java-se-module12-lesson02p7.mp4",
+              "length": "00:10:01"
+            },
+            {
+              "id": "enumabstract",
+              "title": "Absztrakt metódusok implementálása felsorolásos típusokban",
+              "title-en": "Abstract methods in enums",
+              "tags": [],
+              "video": "java-se-module12-lesson04.mp4",
+              "length": "00:04:43"
+            },
+            {
+              "id": "statemachine",
+              "title": "Állapotgép",
+              "title-en": "State machine",
+              "tags": ["állapot", "állapotátmenet", "állapotátmenet diagram", "enum"],
+              "video": "java-se-module07-lesson06.mp4",
+              "length": "00:06:29",
+              "skip-tests": true
+            },
+            {
+              "id": "summaryabstractinterface",
+              "title": "Absztrakt osztályok és interfészek - összefoglalás",
+              "title-en": "Abstract classes and interfaces - summary",
+              "skip-slides": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Haladó objektumorientáltság és kivételkezelés",
+      "name-en": "Advanced object orientation and exception handling",
+      "days": [
+        {
+          "title": "Haladó OO elvek",
+          "title-en": "Advanced object oriented principles",
+          "lessons": [
+            {
+              "id": "polymorphism",
+              "title": "Polimorfizmus",
+              "title-en": "Polimorphism",
+              "tags": ["statikus típus", "dinamikus típus", "dinamikus kötés", "többalakúság", "instanceof", "típuskényszerítés", "casting"],
+              "video": "java-se-module13-lesson01.mp4",
+              "length": "00:11:35"
+            },
+            {
+              "id": "virtualmethod",
+              "title": "Dinamikus kötés",
+              "title-en": "Dynamic binding",
+              "tags": ["polimorfizmus", "virtuális metódus"],
+              "video": "java-se-module13-lesson03.mp4",
+              "length": "00:06:46"
+            },
+            {
+              "id": "isahasa",
+              "title": "is-a has-a kapcsolatok",
+              "title-en": "is-a has-a relations",
+              "tags": ["instanceof", "kompozíció"],
+              "video": "java-se-module13-lesson04.mp4",
+              "length": "00:14:16"
+            },
+            {
+              "id": "summaryadvancedooprinciples",
+              "title": "Haladó OO elvek - összefoglalás",
+              "title-en": "Advanced object oriented principles - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Haladó kivételkezelés",
+          "title-en": "Advanced exception handling",
+          "lessons": [
+            {
+              "id": "exceptions",
+              "title": "Kivételkezelés",
+              "title-en": "Exception handling",
+              "tags": ["kivétel hierarchia", "Throwable", "Error", "Exception", "RuntimeException", "try-catch", "finally", "cause", "throw", "throws", "kezelendő kivétel", "nem kezelendő kivétel", "checked exception", "unchecked exception"],
+              "video": "java-se-module14-lesson01.mp4",
+              "length": "00:16:43",
+              "skip-tests": true
+            },
+            {
+              "id": "exceptionclass",
+              "title": "Saját kivétel",
+              "title-en": "Declaring an exception class",
+              "tags": [],
+              "video": "java-se-module14-lesson02.mp4",
+              "length": "00:11:34"
+            },
+            {
+              "id": "exceptionmulticatch",
+              "title": "Multi catch",
+              "title-en": "Multi catch",
+              "tags": ["pipe"],
+              "video": "java-se-module14-lesson03.mp4",
+              "length": "00:07:35"
+            },
+            {
+              "id": "exceptionresource",
+              "title": "Try-With-Resources szerkezet",
+              "title-en": "Try-With-Resources",
+              "tags": ["AutoCloseable", "close()", "suppressed exception"],
+              "video": "java-se-module14-lesson04.mp4",
+              "length": "00:07:11",
+              "skip-tests": true
+            },
+            {
+              "id": "summaryadvancedexception",
+              "title": "Haladó kivételkezelés - összefoglalás",
+              "title-en": "Advanced exception handling - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Projektfeladat",
+          "title-en": "Project",
+          "lessons": [
+            {
+              "id": "catalog",
+              "title": "Projektfeladat - Könyvtár katalógus projektfeladat",
+              "title-en": "Book catalog project",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Projektfeladat",
+          "title-en": "Project",
+          "lessons": [
+            {
+              "id": "activity",
+              "title": "Activity tracker projektfeladat",
+              "title-en": "Activity tracker project",
+              "skip-slides": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kollekciók és osztálykönyvtárak",
+      "name-en": "Collections, lambda expressions and streams",
+      "days": [
+        {
+          "title": "Java SE haladó - Bevezetés",
+          "title-en": "Java SE advanced - Introduction",
+          "lessons": [
+            {
+              "id": "javaadvwelcome",
+              "title": "Java SE haladó - Bevezetés",
+              "title-en": "Java SE advanced - Introduction",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Belső osztályok",
+          "title-en": "Inner classes",
+          "lessons": [
+            {
+              "id": "nestedclasses",
+              "title": "Belső osztályok",
+              "title-en": "Inner classes",
+              "tags": ["member inner class", "local inner class", "anonymous inner class", "static nested class"],
+              "video": "java-se-module24-lesson05.mp4",
+              "length": "00:25:47"
+            }
+          ]
+        },
+        {
+          "title": "Kollekciók",
+          "title-en": "Collections",
+          "lessons": [
+            {
+              "id": "genericsusage",
+              "title": "Generikusok használata, diamond operátor",
+              "title-en": "Generics and diamond operator",
+              "tags": ["típus paraméter", "raw type"],
+              "video": "java-se-module21-lesson01.mp4",
+              "length": "00:11:22"
+            },
+            {
+              "id": "collectionsequalshash",
+              "title": "Az equals() és hashCode() metódusok",
+              "title-en": "equals() and hashCode() methods",
+			  "tags": ["Objects.equals()", "reflexív", "szimmetrikus", "tranzitív", "hash függvény", "kriptográfia"],
+              "video": "java-se-module22-lesson01.mp4",
+              "length": "00:37:15"
+            },
+            {
+              "id": "collectionslist",
+              "title": "List, ArrayList kontra LinkedList",
+              "title-en": "List, ArrayList vs. LinkedList",
+			  "tags": ["Collection", "List", "Set", "Queue", "add()", "remove()", "isEmpty()", "size()", "clear()", "contains()", "element()", "indexOf()", "lasIndexOf()", "set()", "tömb", "láncolt lista"],
+              "video": "java-se-module22-lesson02.mp4",
+              "length": "00:24:24"
+            },
+            {
+              "id": "collectionsset",
+              "title": "Set",
+              "title-en": "Set",
+			  "tags": ["halmaz", "HashSet", "TreeSet", "LinkedHashSet", "keresőfa", "NavigableSet", "SortedSet", "kétirányú láncolt lista", "bucket"],
+              "video": "java-se-module22-lesson03.mp4",
+              "length": "00:10:48"
+            },
+            {
+              "id": "collectionsqueue",
+              "title": "Queue",
+              "title-en": "Queue",
+			  "tags": ["fej", "farok", "kétvégű sor", "Deque", "ArrayDeque", "LinkedList", "PriorityQueue", "add()", "remove()", "element()", "offer()", "poll()", "peek()", "push()", "pop()"],
+              "video": "java-se-module22-lesson04.mp4",
+              "length": "00:12:11"
+            },
+            {
+              "id": "collectionsmap",
+              "title": "Map",
+              "title-en": "Map",
+			  "tags": ["kulcs", "érték", "Map.Entry", "HashMap", "LinkedHashMap", "TreeMap", "bucket", "keresőfa", "SortedMap", "NavigableMap", "size()", "isEmpty()", "clear()", "get()", "put()", "remove()", "containsKey()", "containsValue()", "entrySet()", "keySet()", "values()"],
+              "video": "java-se-module22-lesson05.mp4",
+              "length": "00:19:39"
+            },
+            {
+              "id": "collectionsautoboxing",
+              "title": "Autoboxing használata kollekcióknál",
+              "title-en": "Autoboxing and collections",
+			  "tags": ["autoboxing", "autounboxing", "csomagoló osztály"],
+              "video": "java-se-module22-lesson06.mp4",
+              "length": "00:12:08"
+            },
+            {
+              "id": "summarycollections",
+              "title": "Kollekciók - összefoglalás",
+              "title-en": "Collections - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Műveletek kollekciókkal",
+          "title-en": "Operations on collections",
+          "lessons": [
+            {
+              "id": "collectionsiterator",
+              "title": "Bejárás",
+              "title-en": "Iterator",
+			  "tags": ["iterator()", "next()", "hasNext()", "remove()", "ConcurrentModificationException"],
+              "video": "java-se-module23-lesson01.mp4",
+              "length": "00:09:51"
+            },
+            {
+              "id": "collectionscomp",
+              "title": "A Comparable és Comparator interfészek",
+              "title-en": "Comparable and Comparator interfaces",
+			  "tags": ["natural ordering", "természetes összehasonlítás", "compareTo()", "compare()", "Collator"],
+              "video": "java-se-module23-lesson02.mp4",
+              "length": "00:22:25"
+            },
+            {
+              "id": "searching",
+              "title": "Keresés",
+              "title-en": "Search algorithms",
+			  "tags": ["Arrays.binarySearch()", "Collection.contains()", "Collection.containsAll()", "List.indexOf()", "Collections.binarySearch()", "Collections.min()", "Collections.max()"],
+              "video": "java-se-module23-lesson03.mp4",
+              "length": "00:16:30"
+            },
+            {
+              "id": "sorting",
+              "title": "Rendezés",
+              "title-en": "Sort algorithms",
+			  "tags": ["Arrays.sort()", "beszúrásos rendezés", "insertion sort", "buborékrendezés", "bubble sort", "gyorsrendezés", "quicksort", "List.sort()", "Collections.sort()", "natural ordering",  "Comparator"],
+              "video": "java-se-module23-lesson04.mp4",
+              "length": "00:14:30"
+            },
+            {
+              "id": "collectionsclass",
+              "title": "Collections osztály (keresésen, rendezésen felüli metódusok)",
+              "title-en": "Collections class",
+			  "tags": ["emptyList()", "emptySet()", "emptyMap()", "singleton()", "singletonList()", "singletonMap()", "synchronizedXxx()", "unmodifiableXxx()", "reverse()", "shuffle()"],
+              "video": "java-se-module23-lesson05.mp4",
+              "length": "00:16:51"
+            },
+            {
+              "id": "clone",
+              "title": "A clone() metódus, deep clone",
+              "title-en": "clone() method, deep clone",
+              "tags": ["Clonable", "copy konstruktor", "shallow copy", "deep copy"],
+              "video": "java-se-module24-lesson04.mp4",
+              "length": "00:23:23"
+            },
+            {
+              "id": "summarycollectionsoperations",
+              "title": "Műveletek kollekciókkal - összefoglalás",
+              "title-en": "Operations on collections - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Lambda kifejezések és streamek",
+          "title-en": "Lambda expressions and streams",
+          "lessons": [
+            {
+              "id": "lambda",
+              "title": "Bevezetés a lambda kifejezések használatába",
+              "title-en": "Introduction to lambda expressions",
+              "tags": ["nyíl operátor", "paraméter", "névtelen metódus", "törzs", "funkcionális interfész", "metódus referencia", "method reference", "Predicate", "Consumer", "UnaryOperator"],
+              "video": "lambda.mp4",
+              "length": "00:08:06"
+            },
+            {
+              "id": "lambdademo",
+              "title": "Bevezetés a lambda kifejezések használatába - gyakorlat",
+              "title-en": "Introduction to lambda expressions - demo",
+              "tags": [],
+              "video": "lambda-demo.mp4",
+              "length": "00:08:41",
+              "only-video": true,
+              "skip-slides": true
+            },
+            {
+              "id": "optional",
+              "title": "Bevezetés az Optional osztály használatába",
+              "title-en": "Introduction to the usage of Optional class",
+              "tags": ["Optional.empty()", "Optional.of()", "isPresent()", "orElse()", "orElseThrow()"],
+              "video": "optional.mp4",
+              "length": "00:06:02"
+            },
+            {
+              "id": "streams",
+              "title": "Bevezetés a streamek használatába",
+              "title-en": "Introduction to the usage of streams",
+              "tags": ["futószalag", "deklaratív","forrásművelet", "közbülső művelet", "záróművelet", "stream()", "filter()", "map()", "collect()", "Collectors.toList()", "peek", "IntStream"],
+              "video": "streams.mp4",
+              "length": "00:07:52"
+            },
+            {
+              "id": "streams-demo1",
+              "title": "Bevezetés a streamek használatába - gyakorlat - komplex példa",
+              "title-en": "Introduction to the usage of streams - demo, complex example",
+              "tags": [],
+              "video": "streams-demo1.mp4",
+              "length": "00:03:59",
+              "only-video": true,
+              "skip-slides": true
+            },
+            {
+              "id": "streams-demo2",
+              "title": "Bevezetés a streamek használatába - gyakorlat - források",
+              "title-en": "Introduction to the usage of streams - demo, creating streams",
+              "tags": [],
+              "video": "streams-demo2.mp4",
+              "length": "00:03:57",
+              "only-video": true,
+              "skip-slides": true
+            },
+            {
+              "id": "streams-demo3",
+              "title": "Bevezetés a streamek használatába - gyakorlat - közbülső és lezáró műveletek",
+              "title-en": "Introduction to the usage of streams - demo, intermediate and terminal operations",
+              "tags": [],
+              "video": "streams-demo3.mp4",
+              "length": "00:05:46",
+              "only-video": true,
+              "skip-slides": true
+            },
+            {
+              "id": "streamsalgorithms",
+              "title": "Programozási tételek streamek használatával - gyakorlati feladatok",
+              "title-en": "Basic algorithms with streams - examples",
+              "tags": [],
+              "skip-slides": true
+            },
+            {
+              "id": "streamsalgorithms-demo",
+              "title": "Programozási tételek streamek használatával - megoldás",
+              "title-en": "Basic algorithms with streams - solution",
+              "tags": [],
+              "video": "streamsalgorithms.mp4",
+              "length": "00:09:20",
+              "only-video": true,
+              "skip-slides": true
+            },
+            {
+              "id": "lambdaintro",
+              "title": "Bevezetés a lambda kifejezések használatába",
+              "title-en": "Introduction to lambda expressions",
+              "tags": ["funkcionális programozás", "funkcionális nyelv", "deklaratív", "állapotmentes", "strategy tervezési minta", "template method tervezési minta", "nyíl operátor", "paraméter", "törzs", "funkcionális interfész", "@FunctionalInterface", "metódus referencia", "method reference", "Predicate", "test()", "Supplier", "get()", "Consumer", "accept()", "BiConsumer", "BiPredicate", "Function", "BiFunction", "apply()", "UnaryOperator", "BinaryOperator", "java.util.function"],
+              "video": "java-se8-03-lambda-kifejezesek.mp4",
+              "length": "00:35:00"
+            },
+            {
+              "id": "lambdaoptional",
+              "title": "Optional használata",
+              "title-en": "Optional class",
+              "tags": ["burkoló osztály", "generikus", "Optional.empty()", "Optional.of()", "Optional.ofNullable()", "ifPresent()", "isPresent()", "isEmpty()", "orElse()", "orElseGet()", "orElseThrow()"],
+              "video": "java-se8-04-optional-osztaly.mp4",
+              "length": "00:19:37"
+            },
+            {
+              "id": "lambdacomparator",
+              "title": "Comparator módosítások",
+              "title-en": "Comparator in Java 8",
+              "tags": ["comparing()", "nullsFirst()", "naturalOrder()", "reverseOrder()", "reversed()"],
+              "video": "java-se8-15-comparator.mp4",
+              "length": "00:19:13"
+            },
+            {
+              "id": "lambdastreams",
+              "title": "Streamek",
+              "title-en": "Streams",
+              "tags": ["véges stream", "végtelen stream", "forrás", "source", "közbülső művelete", "intermediate operation", "záró művelet", "terminal operation", "Stream.empty()", "Stream.of()", "Stream.generate()", "Stream.iterate()", "stream()", "parallelStream()", "count()", "min()", "max()", "findAny()", "findFirst()", "allMatch()", "anyMatch()", "noneMatch()", "forEach()", "reduce()", "collect()", "Collectors"],
+              "video": "java-se8-05-streamek.mp4",
+              "length": "00:53:39"
+            },
+            {
+              "id": "lambdaintermediate",
+              "title": "Intermediate műveletek",
+              "title-en": "Intermediate operations",
+              "tags": ["filter()", "distinct()", "limit()", "skip()", "map()", "flatMap()", "sorted()", "peek()", "lazy kiértékelés"],
+              "video": "java-se8-06-kozbulso-muveletek.mp4",
+              "length": "00:25:39"
+            },
+            {
+              "id": "lambdaprimitives",
+              "title": "Primitívek használata streamekben",
+              "title-en": "Primitive streams",
+              "tags": ["IntStream", "LongStream", "DoubleStream", "IntStream.range()", "IntStream.rangeClosed()", "map()", "mapToObj()", "mapToInt()", "mapToLong()", "mapToDouble()", "IntUnaryOperator", "LongUnaryOperator", "DoubleUnaryOperator", "ToIntFunction", "LongToIntFunction", "DoubleToIntFunction", "ToLongFunction", "IntToLongFunction", "DoubleToLongFunction", "ToDoubleFunction", "IntToDoubleFunction", "LongToDoubleFunction", "IntFunction", "LongFunction", "DoubleFunction", "OptionalInt", "OptionalLong", "OptionalDouble", "getAsInt()", "getAsLong()", "getAsDouble()", "IntSummaryStatistics", "LongSummaryStatistics", "DoubleSummaryStatistics", "summaryStatistics()", "getMin()", "getMax()", "getSum()", "getAverage()", "getCount()"],
+              "video": "java-se8-09-primitiv-streamek.mp4",
+              "length": "00:19:19"
+            },
+            {
+              "id": "lambdacollectors",
+              "title": "Collectors",
+              "title-en": "Collectors",
+              "tags": ["joining()", "counting()", "minBy()", "maxBy()", "summingXXX()", "averagingXXX()", "summerizingXXX()", "toList()", "toSet()", "toCollection()", "toMap()", "partitioningBy()", "groupingBy()", "mapping()"],
+              "video": "java-se8-07-collectorok.mp4",
+              "length": "00:37:34"
+            },
+            {
+              "id": "summarylambdastreams",
+              "title": "Lambda kifejezések és streamek - összefoglalás",
+              "title-en": "Lambda expressions and streams - summary",
+              "skip-slides": true
+            }
+          ]
+        },
+        {
+          "title": "Dátum és időkezelés",
+          "title-en": "Date and time",
+          "lessons": [
+            {
+              "id": "datenewtypes",
+              "title": "Új típusok, LocalDate, LocalTime, parse",
+              "title-en": "LocalDate, LocalTime, LocalDateTime types",
+              "tags": ["LocalDateTime", "DateTimeException", "now()", "of()", "plusXxx()", "minusXxx()", "DayOfWeek", "Month", "isBefore()", "isAfter()", "DateTimeFormatter", "ofLocalizedDate()", "ofPattern()", "withLocale()", "immutable", "szálbiztos", "ChronoUnit"],
+              "video": "java-se-module18-lesson02.mp4",
+              "length": "00:33:20"
+            },
+            {
+              "id": "dateperiod",
+              "title": "Period",
+              "title-en": "Period class",
+              "tags": ["of()", "between()", "parse()", "normalized()", "immutable", "szálbiztos", "plus()", "minus()", "addTo()", "subtractFrom()"],
+              "video": "java-se-module18-lesson03.mp4",
+              "length": "00:12:50"
+            },
+            {
+              "id": "dateduration",
+              "title": "Duration",
+              "title-en": "Duration class",
+              "tags": ["of()", "between()", "parse()", "addTo()", "subtractFrom()", "plus()", "minus()"],
+              "video": "java-se-module18-lesson04.mp4",
+              "length": "00:13:29"
+            },
+            {
+              "id": "datedaylight",
+              "title": "Időzónák és téli-nyári időszámítás",
+              "title-en": "Timezones and Daylight Savings",
+              "tags": ["ZoneId", "getAvailableZoneIds()", "systemDefault()", "of()", "ZonedDateTime", "now()", "withZoneSameInstant()", "DST"],
+              "video": "java-se-module18-lesson05.mp4",
+              "length": "00:14:11"
+            },
+            {
+              "id": "dateinstant",
+              "title": "Instant osztály",
+              "title-en": "Instant class",
+              "tags": []
+            },
+            {
+              "id": "dateclock",
+              "title": "Clock osztály",
+              "title-en": "Clock class",
+              "tags": []
+            },
+            {
+              "id": "dateoldtypes",
+              "title": "Régi dátum- és időkezeléssel kapcsolatos típusok",
+              "title-en": "Old Date and Calendar types",
+              "tags": ["Date", "Calendar", "parse","időzóna", "UTC", "GMT", "getTime()", "System.currentTimeMillis()", "GregorianCalendar", "setTime()", "add()", "after()", "before()", "linient", "DateFormat", "SimpleDateFormat", "parse()", "format()"],
+              "video": "java-se-module18-lesson01.mp4",
+              "length": "00:16:16"
+            }
+          ]
+        },
+        {
+                "title": "További osztályok és többnyelvű alkalmazások",
+                "title-en": "More classes and localization",
+                "lessons": [
+                      {
+                        "id": "formatlocaleregexp",
+                        "title": "Reguláris kifejezések",
+                        "title-en": "Regular expressions",
+                        "tags": ["reguláris kifejezés", "regex", "minta", "Pattern", "compile()", "Matcher", "matcher()", "matches()", "find()", "replaceAll()", "split()", "replaceFirst()"],
+                        "video": "java-se-module17-lesson01.mp4",
+                        "length": "00:26:08"
+                      },
+                      {
+                        "id": "formatlocale",
+                        "title": "Locale osztály nyelv megadására",
+                        "title-en": "Locale class",
+                        "tags": ["lokalizáció", "localization", "L10N", "internationalization", "I18N", "getDefault()", "getCountry()", "getLanguage()", "getInstance()"],
+                        "video": "java-se-module17-lesson02.mp4",
+                        "length": "00:07:32"
+                      },
+                      {
+                        "id": "formatnumberformat",
+                        "title": "NumberFormat osztály számok formázására",
+                        "title-en": "NumberFormat class",
+                        "tags": ["grouping", "fraction digits", "rounding mode", "DecimalFormat", "getIntegerInstance()", "getPercentInstance()", "parse()", "format()"],
+                        "video": "java-se-module17-lesson02p5.mp4",
+                        "length": "00:19:33"
+                      },
+                      {
+                        "id": "formatlocalebundle",
+                        "title": "ResourceBundle osztály nyelvi fordítások tárolására",
+                        "title-en": "Resource Bundle",
+                        "tags": ["lokalizáció", "property fájl"],
+                        "video": "java-se-module17-lesson03.mp4",
+                        "length": "00:14:00"
+                      },
+                      {
+                        "id": "formatlocalemessage",
+                        "title": "MessageFormat paraméterezett nyelvi fordítások használatára",
+                        "title-en": "MessageFormat",
+                        "tags": ["helyőrző", "placeholder", "Locale", "format()"],
+                        "video": "java-se-module17-lesson04.mp4",
+                        "length": "00:18:28"
+                      },
+                      {
+                        "id": "bigdecimal",
+                        "title": "Nagy számok kezelése",
+                        "title-en": "BigInteger, BigDecimal classes",
+                        "tags": ["BigInteger", "BigDecimal", "add()", "subtract()", "multiply()", "divide()", "RoundingMode", "pow()", "setScale()"],
+                        "video": "java-se-module05-lesson03.mp4",
+                        "length": "00:06:54"
+                      }
+                    ]
+        },
+        {
+              "title": "Haladó fájlkezelés",
+              "title-en": "Advanced file handling",
+              "lessons": [
+                {
+                  "id": "ioreadstring",
+                  "title": "Szöveges állomány beolvasása",
+                  "title-en": "Reading a text file",
+                  "tags": [],
+                  "video": "java-se-module19-lesson01.mp4",
+                  "length": "00:09:31"
+                },
+                {
+                  "id": "iowritestring",
+                  "title": "String kiírása szöveges állományba",
+                  "title-en": "Write string to text file",
+                  "tags": [],
+                  "video": "java-se-module19-lesson02.mp4",
+                  "length": "00:05:24"
+                },
+                {
+                  "id": "ioreadwritebytes",
+                  "title": "Bájtok beolvasása fájlból és kiírása fájlba",
+                  "title-en": "Reading and writing bytes",
+                  "tags": [],
+                  "video": "java-se-module19-lesson03.mp4",
+                  "length": "00:04:14"
+                },
+                {
+                  "id": "ioreader",
+                  "title": "String olvasása Readerrel",
+                  "title-en": "Reading a String with Reader",
+                  "tags": [],
+                  "video": "java-se-module19-lesson04.mp4",
+                  "length": "00:10:27"
+                },
+                {
+                  "id": "iowriter",
+                  "title": "String írása Writerrel",
+                  "title-en": "Writing a String with Writer",
+                  "tags": [],
+                  "video": "java-se-module19-lesson05.mp4",
+                  "length": "00:07:03"
+                },
+                {
+                  "id": "ioprintwriter",
+                  "title": "Különböző típusok írása PrintWriterrel",
+                  "title-en": "Using PrintWriter to write different types",
+                  "tags": [],
+                  "video": "java-se-module19-lesson06.mp4",
+                  "length": "00:05:54"
+                },
+                {
+                  "id": "iostringwriter",
+                  "title": "Kiírás Stringbe StringWriterrel",
+                  "title-en": "Writing String with StringWriter",
+                  "tags": [],
+                  "video": "java-se-module19-lesson07.mp4",
+                  "length": "00:08:30"
+                },
+                {
+                  "id": "ioreadbytes",
+                  "title": "Bájtok olvasása InputStreammel",
+                  "title-en": "Reading bytes with InputStream",
+                  "tags": [],
+                  "video": "java-se-module19-lesson08.mp4",
+                  "length": "00:09:27"
+                },
+                {
+                  "id": "ioreaderclasspath",
+                  "title": "String olvasása classpath-ról",
+                  "title-en": "Reading String from file on classpath",
+                  "tags": [],
+                  "video": "java-se-module19-lesson09.mp4",
+                  "length": "00:12:48"
+                },
+                {
+                  "id": "iowritebytes",
+                  "title": "Bájtok írása OutputStreammel",
+                  "title-en": "Writing bytes with OutputStream",
+                  "tags": [],
+                  "video": "java-se-module19-lesson10.mp4",
+                  "length": "00:05:18"
+                },
+                {
+                  "id": "iodatastream",
+                  "title": "Adatok írása OutputStreamre és olvasás",
+                  "title-en": "Writing with OutputStream, and reading with InputStream",
+                  "tags": [],
+                  "video": "java-se-module19-lesson11.mp4",
+                  "length": "00:08:07"
+                },
+                {
+                  "id": "iozip",
+                  "title": "Bájtok írása tömörítéssel",
+                  "title-en": "Using zip compression",
+                  "tags": [],
+                  "video": "java-se-module19-lesson12.mp4",
+                  "length": "00:05:45"
+                },
+                {
+                  "id": "ioconvert",
+                  "title": "Konvertálás a típusok között",
+                  "title-en": "Convert between types",
+                  "tags": [],
+                  "video": "java-se-module19-lesson13.mp4",
+                  "length": "00:07:25"
+                },
+                {
+                  "id": "iofiles",
+                  "title": "Files osztály használata",
+                  "title-en": "Using Files class",
+                  "tags": [],
+                  "video": "java-se-module19-lesson14.mp4",
+                  "length": "00:08:15"
+                },
+                {
+                  "id": "iofilestest",
+                  "title": "Fájlkezelés tesztelése",
+                  "title-en": "Unit testing file handling",
+                  "tags": [],
+                  "video": "java-se-module19-lesson15.mp4",
+                  "length": "00:09:05"
+                },
+                {
+                  "id": "filescanner",
+                  "title": "Fájl olvasása Scannerrel",
+                  "title-en": "Reading file with Scanner",
+                  "tags": ["Path", "IOException", "close()", "try-with-resources", "classpath", "getResourceAsStream()"],
+                  "video": "java-se-module16-lesson06.mp4",
+                  "length": "00:13:08"
+                },
+                {
+                  "id": "properties",
+                  "title": "Properties állományok",
+                  "title-en": "Properties",
+                  "tags": ["kulcs-érték", "getProperty()", "setProperty()", "stringPropertyNames()", "load()", "loadFromXML()", "store()", "storeToXML()", "entry", "comment"],
+                  "video": "java-se-module24-lesson01.mp4",
+                  "length": "00:18:03"
+                }
+              ]
+        },
+        {
+          "title": "Generikusok használata",
+          "title-en": "Generics usage",
+          "lessons": [
+            {
+              "id": "genericclass",
+              "title": "Generikus osztályok",
+              "title-en": "Generic classes",
+              "tags": ["type erasure", "reifiable type", "non-reifiable type", "heap pollution",
+                "bounding type",
+                "upper bound", "wildcard", "upper-bounded wildcard", "lower-bounded wildcard"],
+              "video": "java-se-module21-lesson02.mp4",
+              "length": "00:38:42"
+            },
+            {
+              "id": "genericinterface",
+              "title": "Generikus interfészek",
+              "title-en": "Generic interfaces",
+              "video": "java-se-module21-lesson03.mp4",
+              "length": "00:12:03"
+            },
+            {
+              "id": "genericmethod",
+              "title": "Generikus metódusok",
+              "title-en": "Generic methods",
+              "video": "java-se-module21-lesson04.mp4",
+              "length": "00:09:44"
+            }
+          ]
+        },
+        {
+          "title": "Reflection",
+          "title-en": "Reflection",
+          "lessons": [
+            {
+              "id": "reflectionintro",
+              "title": "Bevezetés a reflection használatába",
+              "title-en": "Intro to reflection",
+              "tags": [],
+              "video": "java-se-module26-lesson01.mp4",
+              "length": "00:12:19"
+            },
+            {
+              "id": "reflectionclasses",
+              "title": "Osztályokkal kapcsolatos információk lekérdezése reflectionnel",
+              "title-en": "Reflection and classes",
+              "tags": [],
+              "video": "java-se-module26-lesson02.mp4",
+              "length": "00:16:59"
+            },
+            {
+              "id": "reflectionattributes",
+              "title": "Attribútumok reflectionnel",
+              "title-en": "Reflection and attributes",
+              "tags": [],
+              "video": "java-se-module26-lesson03.mp4",
+              "length": "00:12:03"
+            },
+            {
+              "id": "reflectionmethods",
+              "title": "Metódusok kezelése reflectionnel",
+              "title-en": "Reflection and methods",
+              "tags": [],
+              "video": "java-se-module26-lesson04.mp4",
+              "length": "00:11:03"
+            },
+            {
+              "id": "reflectionconstructors",
+              "title": "Konstruktorok kezelése reflectionnel",
+              "title-en": "Reflection and constructors",
+              "tags": [],
+              "video": "java-se-module26-lesson05.mp4",
+              "length": "00:05:32"
+            },
+            {
+              "id": "reflectionforname",
+              "title": "Osztály referencia a neve alapján",
+              "title-en": "Load class with forName",
+              "tags": [],
+              "video": "java-se-module26-lesson06.mp4",
+              "length": "00:06:58"
+            },
+            {
+              "id": "reflectiongenerics",
+              "title": "Generikusok és tömbök használata reflectionnel",
+              "title-en": "Reflection, generics and arrays",
+              "tags": [],
+              "video": "java-se-module26-lesson07.mp4",
+              "length": "00:11:04"
+            },
+            {
+              "id": "dynamicproxy",
+              "title": "Dynamic Proxy",
+              "title-en": "Dynamic Proxy",
+              "tags": ["Proxy.newProxyInstance()", "InvocationHandler", "delegálás", "dinamikus proxy"]
+            },
+            {
+              "id": "classloader",
+              "title": "Osztálybetöltés",
+              "title-en": "Classloading",
+              "tags": ["ClassLoader", "rekurzív betöltés", "java -verbose:class", "getParent()", "ClassNotFoundException", "bootstrap class loader", "extention class loader", "system class loader", "JDK", "getResource()", "getResourceAsStream()", "OSGi", "Spring-Loaded", "páruzamosítás", "registerAsParallelCapable()", "-XX:+AlwaysLockClassLoader"]
+            }
+          ]
+        },
+        {
+          "title": "Annotációk",
+          "title-en": "Annotations",
+          "lessons": [
+            {
+              "id": "annotations",
+              "title": "Bevezetés az annotációk használatába",
+              "title-en": "Annotation intro",
+              "tags": ["metaadat", "type element", "Ckecker Framework", "@Documented", "@Target", "@Inherited", "@Retention"],
+              "video": "java-se-module27-lesson01.mp4",
+              "length": "00:12:31"
+            },
+            {
+              "id": "annotationsdetails",
+              "title": "Részletesen az annotációkról",
+              "title-en": "Annotation details",
+              "tags": ["type annotation"],
+              "video": "java-se-module27-lesson02.mp4",
+              "length": "00:17:36"
+            },
+            {
+              "id": "annotationsrepeating",
+              "title": "Ismételhető annotációk",
+              "title-en": "Repeatable annotations",
+              "tags": [ "@Repeatable"],
+              "video": "java-se-module27-lesson03.mp4",
+              "length": "00:09:45"
+            }
+          ]
+        },
+        {
+          "title": "JVM és osztálykönyvtárak",
+          "title-en": "Java Virtual Machine and Standard Class Library",
+          "lessons": [
+            {
+              "id": "jvm",
+              "title": "JVM",
+              "title-en": "JVM",
+              "tags": ["JVM szabvány", "bájtkód", "Java HotSpot", "ClassLoader", "JIT", "GC", "client compiler", "server compiler", "tiered compilation", "háttérszál", "weak generational hypothesis", "stop the world", "-verbosegc", "-XX:+PrintCompilation"],
+              "video": "java-se-module08-lesson01.mp4",
+              "length": "00:13:03"
+            },
+            {
+              "id": "thirdparty",
+              "title": "Third party library-k",
+              "title-en": "Third party libraries",
+              "tags": ["Maven", "naplózás", "Guava", "classpath", "mvn", "clean", "package", "compile", "assembly:single", "-jar"],
+              "video": "java-se-module08-lesson06.mp4",
+              "length": "00:11:35"
+            },
+            {
+              "id": "logging",
+              "title": "Naplózás",
+              "title-en": "Logging",
+              "tags": ["monitorozás", "hibakeresés", "audit", "naplózási szint", "trace", "debug", "info", "warn", "error", "kvázi standard", "SimpleLogger", "SLF4J", "Logback"],
+              "video": "java-se-module08-lesson07.mp4",
+              "length": "00:16:09"
+            }
+          ]
+        },
+        {
+          "title": "Projektfeladat",
+          "title-en": "Project",
+          "lessons": [
+            {
+              "id": "timesheet",
+              "title": "Timesheet projektfeladat",
+              "title-en": "Timesheet project",
+              "skip-slides": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tervezési minták és állapottér reprezentáció",
+      "name-en": "Design patterns and state space representation",
+      "days": [
+        {
+          "title": "Tervezési minták és állapottér reprezentáció",
+          "title-en": "Design patterns and state space representation",
+          "lessons": [
+            {
+              "id": "dpintro",
+              "title": "Bevezetés a tervezési minták használatába",
+              "title-en": "Introduction to design patterns",
+              "tags": ["hign cohesion", "low coupling", "YAGNI", "KISS", "DRY", "Gang Of Four", "létrehozási minták", "viselkedési minták", "szerkezeti minták"],
+              "video": "java-se-module15-lesson01.mp4",
+              "length": "00:13:58"
+            },
+            {
+              "id": "solid",
+              "title": "S.O.L.I.D. elvek",
+              "title-en": "S.O.L.I.D. principles",
+              "tags": ["Robert C. Martin", "Uncle Bob", "Single Responsibility", "Open/Closed", "Liskov substitution", "Interface segregation", "Dependency inversion"],
+              "video": "java-se-module13-lesson02.mp4",
+              "length": "00:04:20"
+            },
+            {
+              "id": "singleton",
+              "title": "Singleton tervezési minta",
+              "title-en": "Singleton design pattern",
+              "tags": ["lazy initialization"],
+              "video": "java-se-module15-lesson02.mp4",
+              "length": "00:10:36"
+            },
+            {
+              "id": "builder",
+              "title": "Builder tervezési minta",
+              "title-en": "Builder design pattern",
+              "video": "java-se-module15-lesson03.mp4",
+              "length": "00:09:39"
+            },
+            {
+              "id": "templatemethod",
+              "title": "Template method tervezési minta",
+              "title-en": "Template method design pattern",
+              "tags": ["hook", "hollywood elv"],
+              "video": "java-se-module15-lesson04.mp4",
+              "length": "00:10:49"
+            },
+            {
+              "id": "simplefactory",
+              "title": "Simple factory tervezési minta",
+              "title-en": "Simple factory design pattern",
+              "video": "java-se-module15-lesson05.mp4",
+              "length": "00:10:57"
+            },
+            {
+              "id": "statespace",
+              "title": "Állapottér reprezentáció",
+              "title-en": "State space representation",
+              "video": "java-se-module07-lesson07.mp4",
+              "length": "00:13:51"
+            }
+          ]
+        },
+        {
+          "lessons": [
+            {
+              "id": "auctionportal",
+              "title": "Projektfeladat (Aukciós portál)",
+              "title-en": "Auction portal project",
+              "skip-slides": true
+            }
+          ],
+          "title": "Projektfeladat",
+          "title-en": "Project"
+        }
+      ]
+    },
+    {
+      "name": "Grafikus felhasználói felületek",
+      "name-en": "Graphical user interfaces",
+      "days": [
+        {
+          "title": "Grafikus felhasználói felületek",
+          "title-en": "Graphical user interfaces",
+          "lessons": [
+            {
+              "id": "swing",
+              "title": "Swing",
+              "title-en": "Swing",
+              "tags": [],
+              "video": "java-se-module08-lesson02.mp4",
+              "length": "00:07:44"
+            },
+            {
+              "id": "javafx",
+              "title": "JavaFX",
+              "title-en": "JavaFX",
+              "tags": [],
+              "video": "java-se-module08-lesson03.mp4",
+              "length": "00:07:14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Párhuzamosság és szálak",
+      "name-en": "Concurrency and threads",
+      "days": [
+        {
+          "title": "Párhuzamosság",
+          "title-en": "Parallel programming",
+          "lessons": [
+            {
+              "id": "concurrencythreads",
+              "title": "Szálak",
+              "title-en": "Threads",
+			  "tags": ["párhuzamosság", "context switch", "Thread", "Concurrency API", "Runnable", "run()", "start()", "sleep()", "polling", "démon szál", "prioritás"]
+            },
+            {
+              "id": "concurrencyexecutors",
+              "title": "Executorok",
+              "title-en": "Executors",
+			  "tags": ["ExecutorService", "Executors", "thread pool", "ütemezés", "execute()", "command", "task", "Callable", "submit()", "invokeAll()", "invokeAny()", "Future", "isDone()", "isCancelled()", "cancel()", "get()", "shutdown()", "isShutdown()", "isTermiinated()", "awaitTermination()", "ScheduledExecutorService", "newCachedThreadPool()", "newFixedThreadPool()", "newScheduledThreadPool()", "afterExecute()"]
+            },
+            {
+              "id": "concurrencysync",
+              "title": "Szinkronizálás",
+              "title-en": "Synchronizing",
+			  "tags": ["szálbiztosság", "race condition", "AtomicBoolean", "AtomicInteger", "AtomicIntegerArray", "AtomicLong", "AtomicLongArray", "AtomicReference", "AtomicReferenceArray", "get()", "set()", "getAndSet()", "incrementAndGet()", "getAndIncrement()", "decrementAndGet()", "getAndDecrement()", "szinkronizált blokk", "synchronized", "szinkronizált metódus", "szálbiztos kollekció", "ConcurrentLinkedQueue", "ConcurrentLinkedDeque", "ConcurrentHashMap", "ConcurrentSkipListSet", "ConcurrentSkipListMap", "CopyOnWriteArraySet", "CopyOnWriteArrayList", "LinkedBlockingQueue", "LinkedBlockingDeque", "szálbiztos burkoló osztály", "Collections.synchronizedXXX()", "liveness", "deadlock", "starvation", "livelock"]
+            }
+          ]
+        },
+        {
+          "title": "Haladó párhuzamosság",
+          "title-en": "Advanced parallel programming",
+          "lessons": [
+            {
+              "id": "concurrencyapi",
+              "title": "CyclicBarrier és ForkJoinPool",
+              "title-en": "CyclicBarrier and ForkJoinPool",
+			  "tags": ["getParties()", "await()", "getNumberWainting()", "ForkJoinTask", "RecursiveAction", "RecursiveTask"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Java 8 plusz újdonságok, funkcionális programozás",
+      "name-en": "Java 8 new features, functional programming",
+      "days": [
+        {
+          "title": "Bevezetés a Java 8 újdonságaiba",
+          "lessons": [
+            {
+              "id": "java8welcome",
+              "title": "Bevezetés",
+              "title-en": "Introduction",
+              "skip-slides": true
+            },
+            {
+              "id": "java8intro",
+              "title": "Újdonságok Java 8-tól",
+              "title-en": "Java 8 new features",
+              "video": "java-se8-01-bevezetes.mp4",
+              "length": "00:08:09"
+            }
+          ]
+        },
+        {
+          "title": "Interfészek",
+          "lessons": [
+            {
+              "id": "interfacedefaultmethods",
+              "title": "Default interfész metódusok",
+              "title-en": "Default interface methods",
+			  "tags": [],
+              "video": "java-se-module12-lesson02p5.mp4",
+              "length": "00:17:37"
+            },
+            {
+              "id": "interfacestaticmethods",
+              "title": "Statikus interfész metódusok",
+              "title-en": "Static interface methods",
+              "tags": [],
+              "video": "java-se-module12-lesson02p7.mp4",
+              "length": "00:10:01"
+            }
+          ]
+        },
+        {
+          "title": "Lambda kifejezések",
+          "title-en": "Lambda expressions",
+          "lessons": [
+            {
+              "id": "lambdaintro",
+              "title": "Bevezetés a lambda kifejezések használatába",
+              "title-en": "Introduction to lambda expressions",
+              "tags": ["funkcionális programozás", "funkcionális nyelv", "deklaratív", "állapotmentes", "strategy tervezési minta", "template method tervezési minta", "nyíl operátor", "paraméter", "törzs", "funkcionális interfész", "@FunctionalInterface", "metódus referencia", "method reference", "Predicate", "test()", "Supplier", "get()", "Consumer", "accept()", "BiConsumer", "BiPredicate", "Function", "BiFunction", "apply()", "UnaryOperator", "BinaryOperator", "java.util.function"],
+              "video": "java-se8-03-lambda-kifejezesek.mp4",
+              "length": "00:35:00"
+            },
+            {
+              "id": "lambdaoptional",
+              "title": "Optional használata",
+              "title-en": "Optional class",
+              "tags": ["burkoló osztály", "generikus", "Optional.empty()", "Optional.of()", "Optional.ofNullable()", "ifPresent()", "isPresent()", "isEmpty()", "orElse()", "orElseGet()", "orElseThrow()"],
+              "video": "java-se8-04-optional-osztaly.mp4",
+              "length": "00:19:37"
+            },
+            {
+              "id": "lambdacomparator",
+              "title": "Comparator módosítások",
+              "title-en": "Comparator in Java 8",
+              "tags": ["comparing()", "nullsFirst()", "naturalOrder()", "reverseOrder()", "reversed()"],
+              "video": "java-se8-15-comparator.mp4",
+              "length": "00:19:13"
+            }
+          ]
+        },
+        {
+          "title": "Streamek",
+          "title-en": "Streams",
+          "lessons": [
+            {
+              "id": "lambdastreams",
+              "title": "Streamek",
+              "title-en": "Streams",
+              "tags": ["véges stream", "végtelen stream", "forrás", "source", "közbülső művelete", "intermediate operation", "záró művelet", "terminal operation", "Stream.empty()", "Stream.of()", "Stream.generate()", "Stream.iterate()", "stream()", "parallelStream()", "count()", "min()", "max()", "findAny()", "findFirst()", "allMatch()", "anyMatch()", "noneMatch()", "forEach()", "reduce()", "collect()", "Collectors"],
+              "video": "java-se8-05-streamek.mp4",
+              "length": "00:53:39"
+            },
+            {
+              "id": "lambdaintermediate",
+              "title": "Intermediate műveletek",
+              "title-en": "Intermediate operations",
+              "tags": ["filter()", "distinct()", "limit()", "skip()", "map()", "flatMap()", "sorted()", "peek()", "lazy kiértékelés"],
+              "video": "java-se8-06-kozbulso-muveletek.mp4",
+              "length": "00:25:39"
+            },
+            {
+              "id": "lambdaprimitives",
+              "title": "Primitívek használata streamekben",
+              "title-en": "Primitive streams",
+              "tags": ["IntStream", "LongStream", "DoubleStream", "IntStream.range()", "IntStream.rangeClosed()", "map()", "mapToObj()", "mapToInt()", "mapToLong()", "mapToDouble()", "IntUnaryOperator", "LongUnaryOperator", "DoubleUnaryOperator", "ToIntFunction", "LongToIntFunction", "DoubleToIntFunction", "ToLongFunction", "IntToLongFunction", "DoubleToLongFunction", "ToDoubleFunction", "IntToDoubleFunction", "LongToDoubleFunction", "IntFunction", "LongFunction", "DoubleFunction", "OptionalInt", "OptionalLong", "OptionalDouble", "getAsInt()", "getAsLong()", "getAsDouble()", "IntSummaryStatistics", "LongSummaryStatistics", "DoubleSummaryStatistics", "summaryStatistics()", "getMin()", "getMax()", "getSum()", "getAverage()", "getCount()"],
+              "video": "java-se8-09-primitiv-streamek.mp4",
+              "length": "00:19:19"
+            },
+            {
+              "id": "lambdacollectors",
+              "title": "Collectors",
+              "title-en": "Collectors",
+              "tags": ["joining()", "counting()", "minBy()", "maxBy()", "summingXXX()", "averagingXXX()", "summerizingXXX()", "toList()", "toSet()", "toCollection()", "toMap()", "partitioningBy()", "groupingBy()", "mapping()"],
+              "video": "java-se8-07-collectorok.mp4",
+              "length": "00:37:34"
+            },
+            {
+              "id": "lambdaparallel",
+              "title": "Párhuzamos streamek",
+              "title-en": "Parallel streams",
+              "tags": ["párhuzamos szál", "overhead", "parallel()", "parallelStream()", "isParallel()", "sequential()", "sorrendezettség", "sorted()", "unordered()", "forEach()", "forEachOrdered()", "szinkronizáció", "reduce()", "collect()", "identity", "accumulator", "combiner", "Collector.characteristics()", "Collector.Characteristics", "Collector.Characteristics.CONCURRENT", "Collector.Characteristics.UNORDERED", "Collectors.toConcurrentMap()", "Collectors.groupingByConcurrent()"],
+              "video": "java-se8-08-parhuzamos-streamek.mp4",
+              "length": "00:51:10"
+            }
+          ]
+        },
+        {
+          "title": "Dátum- és időkezelés",
+          "lessons": [
+            {
+              "id": "datenewtypes",
+              "title": "Új típusok, LocalDate, LocalTime, parse",
+              "title-en": "LocalDate, LocalTime, LocalDateTime types",
+              "tags": ["LocalDateTime", "DateTimeException", "now()", "of()", "plusXxx()", "minusXxx()", "DayOfWeek", "Month", "isBefore()", "isAfter()", "DateTimeFormatter", "ofLocalizedDate()", "ofPattern()", "withLocale()", "ChronoUnit"],
+              "video": "java-se-module18-lesson02.mp4",
+              "length": "00:33:20"
+            },
+            {
+              "id": "dateperiod",
+              "title": "Period",
+              "title-en": "Period class",
+              "tags": ["of()", "between()", "parse()", "normalized()", "immutable", "szálbiztos", "plus()", "minus()", "addTo()", "subtractFrom()"],
+              "video": "java-se-module18-lesson03.mp4",
+              "length": "00:12:50"
+            },
+            {
+              "id": "dateduration",
+              "title": "Duration",
+              "title-en": "Duration class",
+              "tags": ["of()", "between()", "parse()", "addTo()", "subtractFrom()", "plus()", "minus()"],
+              "video": "java-se-module18-lesson04.mp4",
+              "length": "00:13:29"
+            },
+            {
+              "id": "datedaylight",
+              "title": "Időzónák és téli-nyári időszámítás",
+              "title-en": "Timezones and Daylight Savings",
+              "tags": ["ZoneId", "getAvailableZoneIds()", "systemDefault()", "of()", "ZonedDateTime", "now()", "withZoneSameInstant()", "DST"],
+              "video": "java-se-module18-lesson05.mp4",
+              "length": "00:14:11"
+            },
+            {
+              "id": "dateinstant",
+              "title": "Instant osztály",
+              "title-en": "Instant class",
+              "tags": []
+            },
+            {
+              "id": "dateclock",
+              "title": "Clock osztály",
+              "title-en": "Clock class",
+              "tags": []
+            }
+          ]
+        },
+        {
+          "title": "További Java 8 újdonságok",
+          "lessons": [
+            {
+              "id": "java8collection",
+              "title": "Collections Framework módosítások",
+              "title-en": "New Collection API methods",
+              "video": "java-se8-14-collections-framework.mp4",
+              "length": "00:43:02"
+            },
+            {
+              "id": "java8io",
+              "title": "Fájlkezelés",
+              "title-en": "File handling",
+              "video": "java-se8-16-fajlkezeles.mp4",
+              "length": "00:31:47"
+            },
+            {
+              "id": "java8annotations",
+              "title": "Annotációk",
+              "title-en": "Annotations"
+            },
+            {
+              "id": "java8concurrency",
+              "title": "Párhuzamosság",
+              "title-en": "Java 8 concurrency features"
+            },
+            {
+              "id": "completablefuture",
+              "title": "Párhuzamosság - CompletableFuture",
+              "title-en": "CompetableFuture class"
+            },
+            {
+              "id": "java8misc",
+              "title": "További apróságok",
+              "title-en": "More Java 8 features"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
