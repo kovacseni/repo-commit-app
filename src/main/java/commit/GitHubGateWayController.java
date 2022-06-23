@@ -10,8 +10,11 @@ public class GitHubGateWayController {
 
     private GitHubGateWay gateWay;
 
-    public GitHubGateWayController(GitHubGateWay gateWay) {
+    private FileService fileService;
+
+    public GitHubGateWayController(GitHubGateWay gateWay, FileService fileService) {
         this.gateWay = gateWay;
+        this.fileService = fileService;
     }
 
     @GetMapping("/repos")
@@ -27,5 +30,25 @@ public class GitHubGateWayController {
     @GetMapping("/repos/commits")
     public List<String> listCommitsInAllRepositories(String organization) {
         return gateWay.listCommitsInAllRepositories(organization);
+    }
+
+    @GetMapping("/repos/file")
+    public void writeReposToFile(String organization) {
+        fileService.writeReposToFile(organization);
+    }
+
+    @GetMapping("/commits/file")
+    public void writeOneRepoCommitsToFile(String owner, String repository) {
+        fileService.writeOneRepoCommitsToFile(owner, repository);
+    }
+
+    @GetMapping("/repos/commits/file")
+    public void writeCommitsInAllRepositoriesToFile(String organization) {
+        fileService.writeCommitsInAllRepositoriesToFile(organization);
+    }
+
+    @GetMapping("/commits/message")
+    public List<String> listCommitMessagesInOneRepo(String owner, String repoName) {
+        return gateWay.listCommitMessagesInOneRepo(owner, repoName);
     }
 }
