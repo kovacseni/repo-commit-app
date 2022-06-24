@@ -1,6 +1,12 @@
-Balla Attila;
-Bolyós Sándor;java-program-bolyoss
-
+Balla Attila;summaryintroclassesobjects;2022-07-08
+Balla Attila;summaryintroexception;2022-07-29
+Balla Attila;summaryinheritance;2022-08-31
+Balla Attila;summarycollectionsoperations;2022-09-28
+Bolyós Sándor;summaryintrojava;2022-07-01
+Bolyós Sándor;summarycontrolstatements;2022-07-29
+Bolyós Sándor;summaryconstructors;2022-08-26
+Bolyós Sándor;catalog;2022-09-09
+Bolyós Sándor;summarycollectionsoperations;2022-09-21
 Dányi Attila;meetingrooms;2022-06-27
 Dányi Attila;summaryjunit;2022-07-04
 Dányi Attila;summarycontrolstatements;2022-07-11
@@ -8,9 +14,12 @@ Dányi Attila;schoolrecords;2022-08-01
 Dányi Attila;summaryconstructors;2022-08-08
 Dányi Attila;catalog;2022-09-05
 Dányi Attila;summarycollectionsoperations;2022-09-19
-
-Demeter Marcell;java-program-demeterm
-
+Demeter Marcell;summarytypesoperators;2022-07-05
+Demeter Marcell;summaryintroexception;2022-07-19
+Demeter Marcell;summaryattributesmethods;2022-08-02
+Demeter Marcell;summaryadvancedooprinciples;2022-08-16
+Demeter Marcell;catalog;2022-08-30
+Demeter Marcell;summarycollectionsoperations;2022-09-06
 Füzesi Ferenc;summarytools;2022-06-17
 Füzesi Ferenc;summaryclasses;2022-06-17
 Füzesi Ferenc;summaryintrojava;2022-06-23
@@ -31,22 +40,87 @@ Füzesi Ferenc;summaryadvancedooprinciples;2022-08-26
 Füzesi Ferenc;summaryadvancedexception;2022-08-26
 Füzesi Ferenc;nestedclasses;2022-09-02
 Füzesi Ferenc;genericsusage;2022-09-02
-Füzesi Ferenc;summarycollections;2022-09-21
-
-Jelencsik Zoltán;java-program-jelencsik-z
-Kecskés Attila;java-program-kecskesa
-Loksa István;java-program-loksai
-Lozsádi Kund István;java-program-lozsadi-k
-Lőrincz István;java-program-lorinczi
-Molnár Sándor Ferenc;java-program-molnars
-Németh Gábor;java-program-nemethg
-
+Füzesi Ferenc;summarycollectionsoperations;2022-09-21
+Jelencsik Zoltán;statements;2022-07-17
+Jelencsik Zoltán;debug;2022-07-24
+Jelencsik Zoltán;enumtype;2022-07-31
+Jelencsik Zoltán;stringbuilder;2022-08-07
+Jelencsik Zoltán;introexceptioncheckedtrace;2022-08-14
+Jelencsik Zoltán;methodstructure;2022-08-21
+Jelencsik Zoltán;dynamictypes;2022-08-28
+Jelencsik Zoltán;summaryabstractinterface;2022-09-04
+Jelencsik Zoltán;collectionsequalshash;2022-09-11
+Jelencsik Zoltán;searching;2022-09-18
+Jelencsik Zoltán;summarycollectionsoperations;2022-09-25
+Kecskés Attila;meetingrooms;2022-07-08
+Kecskés Attila;schoolrecords;2022-08-12
+Kecskés Attila;summaryabstractinterface;2022-09-09
+Kecskés Attila;summarycollectionsoperations;2022-09-21
+Loksa István;meetingrooms;2022-07-15
+Loksa István;summaryintroexception;2022-07-31
+Loksa István;summaryconstructors;2022-08-15
+Loksa István;summaryadvancedooprinciples;2022-08-31
+Loksa István;summarycollectionsoperations;2022-09-15
+Lozsádi Kund István;statements;2022-06-24
+Lozsádi Kund István;finalmodifier;2022-07-01
+Lozsádi Kund István;typeconversion;2022-07-08
+Lozsádi Kund István;printf;2022-07-22
+Lozsádi Kund István;introexceptionwritefiletestjunit5;2022-07-29
+Lozsádi Kund István;methodoverloading;2022-08-19
+Lozsádi Kund István;interfacerules;2022-08-26
+Lozsádi Kund István;exceptionmulticatch;2022-09-02
+Lozsádi Kund István;collectionsqueue;2022-09-09
+Lozsádi Kund István;lambda;2022-09-16
+Lőrincz István;meetingrooms;2022-06-30
+Lőrincz István;schoolrecords;2022-07-15
+Lőrincz István;catalog;2022-08-07
+Lőrincz István;summarycollectionsoperations;2022-08-15
+Molnár Sándor Ferenc;summaryclasses;2022-06-17
+Molnár Sándor Ferenc;summarycomplextypes;2022-06-24
+Molnár Sándor Ferenc;summaryintroclassesobjects;2022-07-01
+Molnár Sándor Ferenc;meetingrooms;2022-07-22
+Molnár Sándor Ferenc;summarycontrolstatements;2022-07-29
+Molnár Sándor Ferenc;summaryalgorithms;2022-08-05
+Molnár Sándor Ferenc;schoolrecords;2022-08-12
+Molnár Sándor Ferenc;summaryinheritance;2022-08-19
+Molnár Sándor Ferenc;summaryadvancedooprinciples;2022-08-26
+Molnár Sándor Ferenc;catalog;2022-09-16
+Molnár Sándor Ferenc;summarycollectionsoperations;2022-09-30
+Németh Gábor;sonarlint;2022-06-27
+Németh Gábor;finalmodifier;2022-07-04
+Németh Gábor;introexceptionfirstexception;2022-07-18
+Németh Gábor;algorithmsmax;2022-08-01
+Németh Gábor;summaryconstructors;2022-09-01
+Németh Gábor;nestedclasses;2022-09-05
+Németh Gábor;summarycollectionsoperations;2022-09-12
 Pálmai Dávid;meetingrooms;2022-08-05
 Pálmai Dávid;schoolrecords;2022-08-19
-Pálmai Dávid;catalog;2022-08-31
-Pálmai Dávid;activitytracker;2022-09-09
+Pálmai Dávid;catalog;2022-09-09
 Pálmai Dávid;summarycollectionsoperations;2022-09-19
-
-Rácz Renátó;java-program-Racz-R
-Szemes Lajos József;java-program-szemes-l
-Szili László;java-program-szilil
+Rácz Renátó;summaryintrojava;2022-06-18
+Rácz Renátó;meetingrooms;2022-06-26
+Rácz Renátó;summaryjunit;2022-07-03
+Rácz Renátó;summarycontrolstatements;2022-07-10
+Rácz Renátó;schoolrecords;2022-07-17
+Rácz Renátó;summaryconstructors;2022-07-24
+Rácz Renátó;summaryabstractinterface;2022-07-31
+Rácz Renátó;advancedooprinciples;2022-08-07
+Rácz Renátó;catalog;2022-08-28
+Szemes Lajos József;summarytools;2022-06-24
+Szemes Lajos József;javaapi;2022-07-01
+Szemes Lajos József;aslist;2022-07-08
+Szemes Lajos József;composition;2022-07-15
+Szemes Lajos József;conversions;2022-07-22
+Szemes Lajos József;stringseparate;2022-07-29
+Szemes Lajos József;introexceptiontrycatchtrace;2022-08-05
+Szemes Lajos József;introexceptionfinally;2022-08-12
+Szemes Lajos József;javabeans;2022-08-19
+Szemes Lajos József;summaryconstructors;2022-08-26
+Szemes Lajos József;interfaceextends;2022-09-02
+Szemes Lajos József;exceptionclass;2022-09-09
+Szemes Lajos József;collectionsautoboxing;2022-09-16
+Szemes Lajos József;summarycollectionsoperations;2022-09-23
+Szili László;meetingrooms;2022-07-08
+Szili László;summaryintroexception;2022-07-29
+Szili László;summaryabstractinterface;2022-08-26
+Szili László;summarycollectionsoperations;2022-09-20
