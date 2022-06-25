@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class FileService {
+public class GitHubGateWayFileService {
 
     public static final String REPOSITORY_FILENAME_TEMPLATE = "src/main/resources/repoinfo_%s.csv";
 
@@ -17,7 +17,7 @@ public class FileService {
 
     private GitHubGateWay gitHubGateWay;
 
-    public FileService(GitHubGateWay gitHubGateWay) {
+    public GitHubGateWayFileService(GitHubGateWay gitHubGateWay) {
         this.gitHubGateWay = gitHubGateWay;
     }
 

@@ -1,0 +1,28 @@
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 3px solid;
+    background-color: blue;
+}
+
+.actualdate {
+    border-right: 3px solid;
+}
+
+.video {
+    border-right: 3px solid;
+    background-color: blue;
+}
+
+.project {
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+.done {
+    background-color: green;
+}

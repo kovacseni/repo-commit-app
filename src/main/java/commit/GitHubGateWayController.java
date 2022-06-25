@@ -1,21 +1,18 @@
 package commit;
 
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController("/api")
+@RestController("/api/github")
+@AllArgsConstructor
 public class GitHubGateWayController {
 
     private GitHubGateWay gateWay;
 
-    private FileService fileService;
-
-    public GitHubGateWayController(GitHubGateWay gateWay, FileService fileService) {
-        this.gateWay = gateWay;
-        this.fileService = fileService;
-    }
+    private GitHubGateWayFileService fileService;
 
     @GetMapping("/repos")
     public List<String> listOrganizationRepositories(String organization) {
