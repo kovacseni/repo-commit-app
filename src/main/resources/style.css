@@ -2,20 +2,32 @@
 table, th, td {
     border: 1px solid;
     border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
 }
 
 th {
     border-bottom: 3px solid;
-    background-color: blue;
+    background-color: #C5C7C5;
 }
 
 .actualdate {
+    height: 50px;
+    width: 300px;
     border-right: 3px solid;
 }
 
+.member {
+    height: 60px;
+    width: 60px;
+}
+
 .video {
+    height: 60px;
+    width: 300px;
     border-right: 3px solid;
-    background-color: blue;
+    background-color: #C5C7C5;
+    font-weight: bold;
 }
 
 .project {
@@ -24,5 +36,5 @@ th {
 }
 
 .done {
-    background-color: green;
+    background-color: #79F254;
 }

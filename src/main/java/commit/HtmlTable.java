@@ -78,7 +78,7 @@ public class HtmlTable {
         htmlTable.add("<tr>");
         htmlTable.add("<th class=\"actualdate\">" + LocalDate.now() + "</th>");
         for (MemberInfo member : memberInfos) {
-            htmlTable.add("<th>" + member.getName() + "</th>");
+            htmlTable.add("<th class=\"member\">" + member.getName() + "</th>");
         }
         htmlTable.add("</tr>");
     }
