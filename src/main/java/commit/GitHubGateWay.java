@@ -5,9 +5,6 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -27,7 +24,7 @@ public class GitHubGateWay {
     public static final String REPOSITORY_URL_TEMPLATE = "orgs/%s/repos?page=";
 
     public GitHubGateWay(RestTemplateBuilder builder) {
-        this.restTemplate = builder.basicAuthentication("{username}", "{password}").build();
+        this.restTemplate = builder.basicAuthentication("kovacseni", "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").build();
         this.url = BASE_GITHUB_API_URL;
     }
 

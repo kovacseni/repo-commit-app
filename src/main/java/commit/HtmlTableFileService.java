@@ -12,15 +12,21 @@ public class HtmlTableFileService {
 
     private HtmlTable htmlTable;
 
-    public static final String HTML_TABLE_FILENAME_TEMPLATE = "src/main/resources/htmltable_%s.html";
+    public static final String HTML_TABLE_FILENAME_TEMPLATE = "src/main/resources/%s.html";
 
     public HtmlTableFileService(HtmlTable htmlTable) {
         this.htmlTable = htmlTable;
     }
 
     @SneakyThrows
-    public void writeHtmlTableToFile() {
-        List<String> htmlText = htmlTable.generateHtmlTable();
-        Files.write(Path.of(String.format(HTML_TABLE_FILENAME_TEMPLATE, htmlTable.getOrganization())), htmlText);
+    public void writeHtmlTableToFile(String organization) {
+        List<String> htmlText = htmlTable.generateHtmlTable(organization);
+        Files.write(Path.of(String.format(HTML_TABLE_FILENAME_TEMPLATE, htmlTable.getHtmlTitle())), htmlText);
+    }
+
+    @SneakyThrows
+    public void writeHtmlTableToFileProjects(String organization) {
+        List<String> htmlText = htmlTable.generateHtmlTableProjects(organization);
+        Files.write(Path.of(String.format(HTML_TABLE_FILENAME_TEMPLATE, htmlTable.getHtmlTitle() + "_projects")), htmlText);
     }
 }

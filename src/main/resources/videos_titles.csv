@@ -1,0 +1,269 @@
+Java SE alapok - Bevezetés;Java SE alapok - Bevezetés
+Eszközkészlet;Java történeti háttér
+Eszközkészlet;Oracle JDK telepítése
+Eszközkészlet;Több JDK egy gépen
+Eszközkészlet;Java platform
+Eszközkészlet;Maven
+Eszközkészlet;Maven használata proxy mögött
+Eszközkészlet;IDE
+Eszközkészlet;Git használata az IDE-ben
+Eszközkészlet;Feltöltés GitHubra
+Eszközkészlet;Gyakori kérdések a Javaval kapcsolatosan
+Eszközkészlet;Eszközkészlet - összefoglalás
+Bevezetés a Java osztályok használatába;Kiírás és beolvasás konzolról
+Bevezetés a Java osztályok használatába;Objektumok és attribútumok
+Bevezetés a Java osztályok használatába;Metódusok
+Bevezetés a Java osztályok használatába;Konstruktorok
+Bevezetés a Java osztályok használatába;UML, példányok konzol íráskor/olvasáskor
+Bevezetés a Java osztályok használatába;Bevezetés a Java osztályok használatába - összefoglalás
+A nyelv építőkövei;Kódolási konvenciók
+A nyelv építőkövei;SonarLint
+A nyelv építőkövei;Literálok és lokális változók
+A nyelv építőkövei;Kifejezések és utasítások
+A nyelv építőkövei;Csomagok
+A nyelv építőkövei;Java API
+A nyelv építőkövei;JAR állomány
+A nyelv építőkövei;Szöveges típus
+A nyelv építőkövei;Sortörés kezelése
+A nyelv építőkövei;Dátum és időkezelés alapok
+A nyelv építőkövei;Bevezetés a vezérlési szerkezetekbe
+A nyelv építőkövei;A nyelv építőkövei - összefoglalás
+Bonyolultabb típusok;Tömbök
+Bonyolultabb típusok;Parancssori paraméterek
+Bonyolultabb típusok;Tömbök tömbje
+Bonyolultabb típusok;Tömbök kezelése
+Bonyolultabb típusok;Lista
+Bonyolultabb típusok;Lista létrehozása
+Bonyolultabb típusok;Ciklusok fajtái
+Bonyolultabb típusok;Módosítás bejáráskor
+Bonyolultabb típusok;Debug
+Bonyolultabb típusok;Konstans értékek használata
+Bonyolultabb típusok;Math és Random osztály
+Bonyolultabb típusok;Bonyolultabb típusok - összefoglalás
+Részletesebben az osztályokról és objektumokról;Objektumok
+Részletesebben az osztályokról és objektumokról;Bevezetés az attribútumok használatába
+Részletesebben az osztályokról és objektumokról;Bevezetés a konstruktorok használatába
+Részletesebben az osztályokról és objektumokról;Bevezetés a metódusok használatába
+Részletesebben az osztályokról és objektumokról;Referenciák
+Részletesebben az osztályokról és objektumokról;Kompozíció
+Részletesebben az osztályokról és objektumokról;Kompozíció listával
+Részletesebben az osztályokról és objektumokról;Részletesebben az osztályokról és objektumokról - összefoglalás
+Projektfeladat;Projektfeladat - Tárgyaló nyilvántartás
+Típusok és operátorok;Literálok
+Típusok és operátorok;Egyszerű típusok
+Típusok és operátorok;Karakterek
+Típusok és operátorok;Felsorolásos típus
+Típusok és operátorok;Operátorok
+Típusok és operátorok;Oszthatóság vizsgálata
+Típusok és operátorok;Típuskonverzió
+Típusok és operátorok;Egész és lebegőpontos számok
+Típusok és operátorok;Különbségek a típuskonverzió, boxing és String műveletek között
+Típusok és operátorok;Típusok és operátorok - összefoglalás
+Unit tesztelés JUnittal;Unit tesztelés JUnittal
+Unit tesztelés JUnittal;JUnit 5
+Unit tesztelés JUnittal;JUnit assert metódusok
+Unit tesztelés JUnittal;Tesztesetek életciklusa
+Unit tesztelés JUnittal;JUnit 4 és JUnit 5 közötti különbségek
+Unit tesztelés JUnittal;Unit tesztelés JUnittal - összefoglalás
+Részletesen a szöveges típusról;String alapok
+Részletesen a szöveges típusról;Konkatenáció
+Részletesen a szöveges típusról;Főbb String metódusok
+Részletesen a szöveges típusról;StringBuilder
+Részletesen a szöveges típusról;Szövegek elválasztása vesszővel
+Részletesen a szöveges típusról;Scanner
+Részletesen a szöveges típusról;printf
+Részletesen a szöveges típusról;Részletesen a szöveges típusról - összefoglalás
+Vezérlési szerkezetek;Vezérlési szerkezetek és az elágazás
+Vezérlési szerkezetek;Ciklusok
+Vezérlési szerkezetek;Haladó vezérlési szerkezetek
+Vezérlési szerkezetek;Vezérlési szerkezetek - összefoglalás
+Bevezetés a kivétel- és fájlkezelésbe;Első kivétel
+Bevezetés a kivétel- és fájlkezelésbe;További kivételek
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel a hívási láncban
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel kezelése
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel kezelése a hívási láncban
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel eldobása
+Bevezetés a kivétel- és fájlkezelésbe;Kivételkezelés tesztelése JUnit 4 használatával
+Bevezetés a kivétel- és fájlkezelésbe;Kivételkezelés tesztelése JUnit 5 használatával
+Bevezetés a kivétel- és fájlkezelésbe;Fájl beolvasása
+Bevezetés a kivétel- és fájlkezelésbe;Kötelezően kezelendő kivétel a hívási láncban
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel becsomagolása
+Bevezetés a kivétel- és fájlkezelésbe;Fájlbeolvasás tesztelése JUnit 4 használatával
+Bevezetés a kivétel- és fájlkezelésbe;Fájlbeolvasás tesztelése JUnit 5 használatával
+Bevezetés a kivétel- és fájlkezelésbe;Fájl írása
+Bevezetés a kivétel- és fájlkezelésbe;Fájl írásának tesztelése JUnit 4 használatával
+Bevezetés a kivétel- és fájlkezelésbe;Fájl írásának tesztelése JUnit 5 használatával
+Bevezetés a kivétel- és fájlkezelésbe;A finally ág
+Bevezetés a kivétel- és fájlkezelésbe;Kivétel- és fájlkezelés - összefoglalás
+Programozási tételek és egyéb algoritmusok;Összegzés tétele
+Programozási tételek és egyéb algoritmusok;Számlálás tétele
+Programozási tételek és egyéb algoritmusok;Szélsőérték-keresés tétele
+Programozási tételek és egyéb algoritmusok;Eldöntés tétele
+Programozási tételek és egyéb algoritmusok;Szűrés
+Programozási tételek és egyéb algoritmusok;Transzformáció
+Programozási tételek és egyéb algoritmusok;Rekurzió
+Programozási tételek és egyéb algoritmusok;Programozási tételek és egyéb algoritmusok - összefoglalás
+Projektfeladat;Projektfeladat - Elektronikus osztálynapló
+Attribútumok és metódusok;Immutable objektumok
+Attribútumok és metódusok;JavaBeans objektumok
+Attribútumok és metódusok;Metódusok
+Attribútumok és metódusok;Értékmásolás szerinti paraméterátadás
+Attribútumok és metódusok;Metódus paraméterek és visszatérési értékek
+Attribútumok és metódusok;Változó hosszúságú paraméterlista
+Attribútumok és metódusok;Metódus hívások láncolása
+Attribútumok és metódusok;Metódusnév túlterhelés
+Attribútumok és metódusok;Statikus attribútumok és metódusok
+Attribútumok és metódusok;Attribútumok és metódusok - összefoglalás
+Konstruktorok és inicializátorok;Default és paraméter nélküli konstruktor
+Konstruktorok és inicializátorok;Konstruktor túlterhelés
+Konstruktorok és inicializátorok;Inicializátorok
+Konstruktorok és inicializátorok;Konstruktorok és inicializátorok - összefoglalás
+Öröklődés;Öröklődés
+Öröklődés;Konstruktorok és az öröklődés viszonya
+Öröklődés;Statikus és dinamikus típus
+Öröklődés;Object ősosztály
+Öröklődés;Attribútumok öröklődése
+Öröklődés;Metódusok öröklődése
+Öröklődés;Öröklődés - összefoglalás
+Absztrakt osztályok és interfészek;Absztrakt osztályok
+Absztrakt osztályok és interfészek;Interfészek
+Absztrakt osztályok és interfészek;Interfészekkel kapcsolatos szabályok
+Absztrakt osztályok és interfészek;Dependency inversion
+Absztrakt osztályok és interfészek;Interfészek és az öröklődés viszonya
+Absztrakt osztályok és interfészek;Default interfész metódusok
+Absztrakt osztályok és interfészek;Statikus interfész metódusok
+Absztrakt osztályok és interfészek;Absztrakt metódusok implementálása felsorolásos típusokban
+Absztrakt osztályok és interfészek;Állapotgép
+Absztrakt osztályok és interfészek;Absztrakt osztályok és interfészek - összefoglalás
+Haladó OO elvek;Polimorfizmus
+Haladó OO elvek;Dinamikus kötés
+Haladó OO elvek;is-a has-a kapcsolatok
+Haladó OO elvek;Haladó OO elvek - összefoglalás
+Haladó kivételkezelés;Kivételkezelés
+Haladó kivételkezelés;Saját kivétel
+Haladó kivételkezelés;Multi catch
+Haladó kivételkezelés;Try-With-Resources szerkezet
+Haladó kivételkezelés;Haladó kivételkezelés - összefoglalás
+Projektfeladat;Projektfeladat - Könyvtár katalógus projektfeladat
+Projektfeladat;Activity tracker projektfeladat
+Java SE haladó - Bevezetés;Java SE haladó - Bevezetés
+Belső osztályok;Belső osztályok
+Kollekciók;Generikusok használata, diamond operátor
+Kollekciók;Az equals() és hashCode() metódusok
+Kollekciók;List, ArrayList kontra LinkedList
+Kollekciók;Set
+Kollekciók;Queue
+Kollekciók;Map
+Kollekciók;Autoboxing használata kollekcióknál
+Kollekciók;Kollekciók - összefoglalás
+Műveletek kollekciókkal;Bejárás
+Műveletek kollekciókkal;A Comparable és Comparator interfészek
+Műveletek kollekciókkal;Keresés
+Műveletek kollekciókkal;Rendezés
+Műveletek kollekciókkal;Collections osztály (keresésen, rendezésen felüli metódusok)
+Műveletek kollekciókkal;A clone() metódus, deep clone
+Műveletek kollekciókkal;Műveletek kollekciókkal - összefoglalás
+Lambda kifejezések és streamek;Bevezetés a lambda kifejezések használatába
+Lambda kifejezések és streamek;Bevezetés a lambda kifejezések használatába - gyakorlat
+Lambda kifejezések és streamek;Bevezetés az Optional osztály használatába
+Lambda kifejezések és streamek;Bevezetés a streamek használatába
+Lambda kifejezések és streamek;Bevezetés a streamek használatába - gyakorlat - komplex példa
+Lambda kifejezések és streamek;Bevezetés a streamek használatába - gyakorlat - források
+Lambda kifejezések és streamek;Bevezetés a streamek használatába - gyakorlat - közbülső és lezáró műveletek
+Lambda kifejezések és streamek;Programozási tételek streamek használatával - gyakorlati feladatok
+Lambda kifejezések és streamek;Programozási tételek streamek használatával - megoldás
+Lambda kifejezések és streamek;Bevezetés a lambda kifejezések használatába
+Lambda kifejezések és streamek;Optional használata
+Lambda kifejezések és streamek;Comparator módosítások
+Lambda kifejezések és streamek;Streamek
+Lambda kifejezések és streamek;Intermediate műveletek
+Lambda kifejezések és streamek;Primitívek használata streamekben
+Lambda kifejezések és streamek;Collectors
+Lambda kifejezések és streamek;Lambda kifejezések és streamek - összefoglalás
+Dátum és időkezelés;Új típusok, LocalDate, LocalTime, parse
+Dátum és időkezelés;Period
+Dátum és időkezelés;Duration
+Dátum és időkezelés;Időzónák és téli-nyári időszámítás
+Dátum és időkezelés;Instant osztály
+Dátum és időkezelés;Clock osztály
+Dátum és időkezelés;Régi dátum- és időkezeléssel kapcsolatos típusok
+További osztályok és többnyelvű alkalmazások;Reguláris kifejezések
+További osztályok és többnyelvű alkalmazások;Locale osztály nyelv megadására
+További osztályok és többnyelvű alkalmazások;NumberFormat osztály számok formázására
+További osztályok és többnyelvű alkalmazások;ResourceBundle osztály nyelvi fordítások tárolására
+További osztályok és többnyelvű alkalmazások;MessageFormat paraméterezett nyelvi fordítások használatára
+További osztályok és többnyelvű alkalmazások;Nagy számok kezelése
+Haladó fájlkezelés;Szöveges állomány beolvasása
+Haladó fájlkezelés;String kiírása szöveges állományba
+Haladó fájlkezelés;Bájtok beolvasása fájlból és kiírása fájlba
+Haladó fájlkezelés;String olvasása Readerrel
+Haladó fájlkezelés;String írása Writerrel
+Haladó fájlkezelés;Különböző típusok írása PrintWriterrel
+Haladó fájlkezelés;Kiírás Stringbe StringWriterrel
+Haladó fájlkezelés;Bájtok olvasása InputStreammel
+Haladó fájlkezelés;String olvasása classpath-ról
+Haladó fájlkezelés;Bájtok írása OutputStreammel
+Haladó fájlkezelés;Adatok írása OutputStreamre és olvasás
+Haladó fájlkezelés;Bájtok írása tömörítéssel
+Haladó fájlkezelés;Konvertálás a típusok között
+Haladó fájlkezelés;Files osztály használata
+Haladó fájlkezelés;Fájlkezelés tesztelése
+Haladó fájlkezelés;Fájl olvasása Scannerrel
+Haladó fájlkezelés;Properties állományok
+Generikusok használata;Generikus osztályok
+Generikusok használata;Generikus interfészek
+Generikusok használata;Generikus metódusok
+Reflection;Bevezetés a reflection használatába
+Reflection;Osztályokkal kapcsolatos információk lekérdezése reflectionnel
+Reflection;Attribútumok reflectionnel
+Reflection;Metódusok kezelése reflectionnel
+Reflection;Konstruktorok kezelése reflectionnel
+Reflection;Osztály referencia a neve alapján
+Reflection;Generikusok és tömbök használata reflectionnel
+Reflection;Dynamic Proxy
+Reflection;Osztálybetöltés
+Annotációk;Bevezetés az annotációk használatába
+Annotációk;Részletesen az annotációkról
+Annotációk;Ismételhető annotációk
+JVM és osztálykönyvtárak;JVM
+JVM és osztálykönyvtárak;Third party library-k
+JVM és osztálykönyvtárak;Naplózás
+Projektfeladat;Timesheet projektfeladat
+Tervezési minták és állapottér reprezentáció;Bevezetés a tervezési minták használatába
+Tervezési minták és állapottér reprezentáció;S.O.L.I.D. elvek
+Tervezési minták és állapottér reprezentáció;Singleton tervezési minta
+Tervezési minták és állapottér reprezentáció;Builder tervezési minta
+Tervezési minták és állapottér reprezentáció;Template method tervezési minta
+Tervezési minták és állapottér reprezentáció;Simple factory tervezési minta
+Tervezési minták és állapottér reprezentáció;Állapottér reprezentáció
+Projektfeladat;Projektfeladat (Aukciós portál)
+Grafikus felhasználói felületek;Swing
+Grafikus felhasználói felületek;JavaFX
+Párhuzamosság;Szálak
+Párhuzamosság;Executorok
+Párhuzamosság;Szinkronizálás
+Haladó párhuzamosság;CyclicBarrier és ForkJoinPool
+Bevezetés a Java 8 újdonságaiba;Bevezetés
+Bevezetés a Java 8 újdonságaiba;Újdonságok Java 8-tól
+Interfészek;Default interfész metódusok
+Interfészek;Statikus interfész metódusok
+Lambda kifejezések;Bevezetés a lambda kifejezések használatába
+Lambda kifejezések;Optional használata
+Lambda kifejezések;Comparator módosítások
+Streamek;Streamek
+Streamek;Intermediate műveletek
+Streamek;Primitívek használata streamekben
+Streamek;Collectors
+Streamek;Párhuzamos streamek
+Dátum- és időkezelés;Új típusok, LocalDate, LocalTime, parse
+Dátum- és időkezelés;Period
+Dátum- és időkezelés;Duration
+Dátum- és időkezelés;Időzónák és téli-nyári időszámítás
+Dátum- és időkezelés;Instant osztály
+Dátum- és időkezelés;Clock osztály
+További Java 8 újdonságok;Collections Framework módosítások
+További Java 8 újdonságok;Fájlkezelés
+További Java 8 újdonságok;Annotációk
+További Java 8 újdonságok;Párhuzamosság
+További Java 8 újdonságok;Párhuzamosság - CompletableFuture
+További Java 8 újdonságok;További apróságok

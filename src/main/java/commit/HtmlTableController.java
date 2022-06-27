@@ -14,13 +14,23 @@ public class HtmlTableController {
 
     private HtmlTableFileService fileService;
 
-    @GetMapping("/generate")
-    public List<String> generateHtmlTable() {
-        return htmlTable.generateHtmlTable();
+    @GetMapping("/generate/table")
+    public List<String> generateHtmlTable(String organization) {
+        return htmlTable.generateHtmlTable(organization);
     }
 
-    @GetMapping("/file")
-    public void writeHtmlTableToFile() {
-        fileService.writeHtmlTableToFile();
+    @GetMapping("/generate/projects-table")
+    public List<String> generateHtmlTableProjects(String organization) {
+        return htmlTable.generateHtmlTableProjects(organization);
+    }
+
+    @GetMapping("/file/table")
+    public void writeHtmlTableToFile(String organization) {
+        fileService.writeHtmlTableToFile(organization);
+    }
+
+    @GetMapping("/file/projects-table")
+    public void writeHtmlTableToFileProjects(String organization) {
+        fileService.writeHtmlTableToFileProjects(organization);
     }
 }

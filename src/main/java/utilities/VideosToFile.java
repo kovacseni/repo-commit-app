@@ -20,7 +20,6 @@ public class VideosToFile {
         int weeks = JsonPath.read(json, "weeks.length()");
         for (int i = 0; i < weeks; i++) {
             int days = JsonPath.read(json,"weeks[" + i + "].days.length()");
-            System.out.println(days);
             for (int j = 0; j < days; j++) {
                 int lessons = JsonPath.read(json, "weeks[" + i + "].days[" + j + "].lessons.length()");
                 for (int k = 0; k < lessons; k++) {
