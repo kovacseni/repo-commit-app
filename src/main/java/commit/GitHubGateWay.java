@@ -24,7 +24,7 @@ public class GitHubGateWay {
     public static final String REPOSITORY_URL_TEMPLATE = "orgs/%s/repos?page=";
 
     public GitHubGateWay(RestTemplateBuilder builder) {
-        this.restTemplate = builder.basicAuthentication("kovacseni", "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").build();
+        this.restTemplate = builder.basicAuthentication("", "").build();
         this.url = BASE_GITHUB_API_URL;
     }
 
