@@ -46,9 +46,9 @@ public class HtmlTable {
 
     private List<String> htmlTable = new ArrayList<>();
 
-    private List<MemberInfo> memberInfos = new ArrayList<>();
+    private List<MemberInfo> memberInfos;
 
-    private Map<String, String> videosTitlesAndIds = new LinkedHashMap<>();
+    private Map<String, String> videosTitlesAndIds;
 
     public HtmlTable(GitHubGateWay gitHubGateWay) {
         this.gitHubGateWay = gitHubGateWay;
@@ -67,11 +67,11 @@ public class HtmlTable {
 
     public List<String> generateHtmlTableProjects(String organization) {
         loadMemberInfos(organization);
-        loadVideosTitlesAndIds();
+        loadVideosTitlesAndIdsProjects();
         addHtmlHeaderProjects();
         addBeginTags();
         addHeaderRow();
-        addTableBodyRowsProjects();
+        addTableBodyRows();
         addEndTags();
         return htmlTable;
     }
@@ -146,38 +146,6 @@ public class HtmlTable {
         htmlTable.add("</tbody>");
     }
 
-    private void addTableBodyRowsProjects() {
-        htmlTable.add("<tbody class=\"align-middle text-center\">");
-        for (String video : videosTitlesAndIds.keySet()) {
-            String videoId = videosTitlesAndIds.get(video);
-            if (PROJECT_TASK_IDS.contains(videoId)) {
-                htmlTable.add("<tr>");
-                StringBuilder videoCellBuilder = new StringBuilder("<td class=\"video");
-                videoCellBuilder.append(" project");
-                videoCellBuilder.append(" border-end border-5\">" + video + "</td>");
-                htmlTable.add(videoCellBuilder.toString());
-                for (MemberInfo member : memberInfos) {
-                    StringBuilder tableCellBuilder = new StringBuilder("<td class=\"nothing");
-                    if (PROJECT_TASK_IDS.contains(videoId)) {
-                        tableCellBuilder.append(" project");
-                    }
-                    Optional<String> commitToThisVideo = member.getCommits().stream().filter(c -> c.startsWith("ex-" + videoId)).findAny();
-                    if (commitToThisVideo.isPresent()) {
-                        tableCellBuilder.append(" done");
-                    }
-                    tableCellBuilder.append("\">");
-                    if (member.getCommitments().containsKey(videoId)) {
-                        tableCellBuilder.append(member.getCommitments().get(videoId).toString());
-                    }
-                    tableCellBuilder.append("</td>");
-                    htmlTable.add(tableCellBuilder.toString());
-                }
-                htmlTable.add("</tr>");
-            }
-        }
-        htmlTable.add("</tbody>");
-    }
-
     private void addEndTags() {
         htmlTable.add("""
                </table>
@@ -194,6 +162,7 @@ public class HtmlTable {
 
     @SneakyThrows
     private void loadMemberInfos(String organization) {
+        memberInfos = new ArrayList<>();
         List<String> membersAndRepoNames = Files.readAllLines(Path.of(MEMBER_AND_REPO_PATH));
         for (String line : membersAndRepoNames) {
             String[] memberAndRepo = line.split(";");
@@ -215,12 +184,28 @@ public class HtmlTable {
 
     @SneakyThrows
     private void loadVideosTitlesAndIds() {
+        videosTitlesAndIds = new LinkedHashMap<>();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(HtmlTable.class.getResourceAsStream("/videos.csv")))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String chapterAndVideoName = line.substring(0, line.lastIndexOf(";"));
                 String videoId = line.substring(line.lastIndexOf(";") + 1);
                 videosTitlesAndIds.put(chapterAndVideoName, videoId);
+            }
+        }
+    }
+
+    @SneakyThrows
+    private void loadVideosTitlesAndIdsProjects() {
+        videosTitlesAndIds = new LinkedHashMap<>();
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(HtmlTable.class.getResourceAsStream("/videos.csv")))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String chapterAndVideoName = line.substring(0, line.lastIndexOf(";"));
+                String videoId = line.substring(line.lastIndexOf(";") + 1);
+                if (PROJECT_TASK_IDS.contains(videoId)) {
+                    videosTitlesAndIds.put(chapterAndVideoName, videoId);
+                }
             }
         }
     }
