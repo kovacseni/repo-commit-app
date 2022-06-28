@@ -3,6 +3,7 @@ package commit;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -18,15 +19,16 @@ public class HtmlTableFileService {
         this.htmlTable = htmlTable;
     }
 
-    @SneakyThrows
+    @SneakyThrows(IOException.class)
     public void writeHtmlTableToFile(String organization) {
         List<String> htmlText = htmlTable.generateHtmlTable(organization);
         Files.write(Path.of(String.format(HTML_TABLE_FILENAME_TEMPLATE, htmlTable.getHtmlTitle())), htmlText);
     }
 
-    @SneakyThrows
+    @SneakyThrows(IOException.class)
     public void writeHtmlTableToFileProjects(String organization) {
         List<String> htmlText = htmlTable.generateHtmlTableProjects(organization);
+        System.out.println(htmlText);
         Files.write(Path.of(String.format(HTML_TABLE_FILENAME_TEMPLATE, htmlTable.getHtmlTitle() + "_projects")), htmlText);
     }
 }

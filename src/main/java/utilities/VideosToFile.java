@@ -3,6 +3,7 @@ package utilities;
 import com.jayway.jsonpath.JsonPath;
 import lombok.SneakyThrows;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.List;
 
 public class VideosToFile {
 
-    @SneakyThrows
+    @SneakyThrows(IOException.class)
     public void writeVideosToFile() {
         List<String> syllabusJson = Files.readAllLines(Path.of("src/main/resources/syllabus.json"));
         StringBuilder jsonBuilder = new StringBuilder();

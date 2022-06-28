@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import utilities.MemberInfo;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -160,7 +161,7 @@ public class HtmlTable {
                 """);
     }
 
-    @SneakyThrows
+    @SneakyThrows(IOException.class)
     private void loadMemberInfos(String organization) {
         memberInfos = new ArrayList<>();
         List<String> membersAndRepoNames = Files.readAllLines(Path.of(MEMBER_AND_REPO_PATH));
@@ -182,7 +183,7 @@ public class HtmlTable {
         }
     }
 
-    @SneakyThrows
+    @SneakyThrows(IOException.class)
     private void loadVideosTitlesAndIds() {
         videosTitlesAndIds = new LinkedHashMap<>();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(HtmlTable.class.getResourceAsStream("/videos.csv")))) {
@@ -195,7 +196,7 @@ public class HtmlTable {
         }
     }
 
-    @SneakyThrows
+    @SneakyThrows(IOException.class)
     private void loadVideosTitlesAndIdsProjects() {
         videosTitlesAndIds = new LinkedHashMap<>();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(HtmlTable.class.getResourceAsStream("/videos.csv")))) {
