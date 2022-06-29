@@ -1,18 +1,55 @@
-body {
-    background: linear-gradient(to right, #003973, #e5e5be);
+
+table {
+    background: linear-gradient(to right, #1970c7, #e5e5be);
+    font-weight: 600;
+}
+
+table td, table th {
+    min-width: 185px;
 }
 
 td.nothing {
     height: 140px;
 }
 
-.table td, .table th {
-    min-width: 150px;
+table.sticky thead tr:nth-child(1) th{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #155a9f;
+    color: white;
+    box-shadow: 0px 0px 0px 1px #ddd, 2px 0px 0px 0px #444;
+}
+
+table.sticky-x tr td:nth-child(1){
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    background-color: #155a9f;
+    color: white;
+    box-shadow: 0px 0px 0px 1px #ddd, 2px 0px 0px 0px #444;
+}
+
+table.sticky-x tr th:nth-child(1){
+    position: sticky;
+    left: 0;
+    z-index: 10;
+}
+
+table.sticky-x thead tr th:nth-child(1) {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 12;
 }
 
 .table td.video{
     min-width: 280px;
     font-weight: bold;
+}
+
+.table td, .table th {
+    min-width: 150px;
 }
 
 td.done {

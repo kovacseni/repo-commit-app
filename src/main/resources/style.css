@@ -1,14 +1,45 @@
+table {
+    background: linear-gradient(to right, #1970c7, #e5e5be);
+    font-weight: 600;
+}
 
-body {
-    background: linear-gradient(to right, #003973, #e5e5be);
+table td, table th {
+    min-width: 185px;
 }
 
 td.nothing {
     height: 140px;
 }
 
-.table td, .table th {
-    min-width: 150px;
+table.sticky thead tr:nth-child(1) th{
+    position: sticky; 
+    top: 0; 
+    z-index: 10;
+    background-color: #155a9f;
+    color: white;
+    box-shadow: 0px 0px 0px 1px #ddd, 2px 0px 0px 0px #444;
+}
+  
+table.sticky-x tr td:nth-child(1){
+    position: sticky; 
+    left: 0; 
+    z-index: 10;
+    background-color: #155a9f;
+    color: white;
+    box-shadow: 0px 0px 0px 1px #ddd, 2px 0px 0px 0px #444;
+}
+  
+table.sticky-x tr th:nth-child(1){
+    position: sticky; 
+    left: 0; 
+    z-index: 10;
+}
+  
+table.sticky-x thead tr th:nth-child(1) {
+    position: sticky; 
+    left: 0; 
+    top: 0; 
+    z-index: 12;
 }
 
 .table td.video{
@@ -16,11 +47,17 @@ td.nothing {
     font-weight: bold;
 }
 
+.table td, .table th {
+    min-width: 150px;
+}
+
 td.done {
     background-color: #79F254;
 }
 
 td.project {
-    border-top: 3px solid;
-    border-bottom: 3px solid;
+    border-top: 5px solid;
+    border-top-color: #0f3e6e;
+    border-bottom: 5px solid;
+    border-bottom-color: #0f3e6e;
 }
