@@ -28,7 +28,6 @@ public class HtmlTableFileService {
     @SneakyThrows(IOException.class)
     public void writeHtmlTableToFileProjects(String organization) {
         List<String> htmlText = htmlTable.generateHtmlTableProjects(organization);
-        System.out.println(htmlText);
         Files.write(Path.of(String.format(HTML_TABLE_FILENAME_TEMPLATE, htmlTable.getHtmlTitle() + "_projects")), htmlText);
     }
 }
