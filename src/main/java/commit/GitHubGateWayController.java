@@ -2,6 +2,8 @@ package commit;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -14,38 +16,38 @@ public class GitHubGateWayController {
 
     private GitHubGateWayFileService fileService;
 
-    @GetMapping("/repos")
-    public List<String> listOrganizationRepositories(String organization) {
+    @GetMapping("/{organization}/repos")
+    public List<String> listOrganizationRepositories(@PathVariable("organization") String organization) {
         return gateWay.listOrganizationRepositories(organization);
     }
 
     @GetMapping("/commits")
-    public List<String> listCommitsInOneRepository(String owner, String repository) {
+    public List<String> listCommitsInOneRepository(@RequestParam String owner, @RequestParam String repository) {
         return gateWay.listCommitsInOneRepository(owner, repository);
     }
 
-    @GetMapping("/repos/commits")
-    public List<String> listCommitsInAllRepositories(String organization) {
+    @GetMapping("/{organization}/repos/commits")
+    public List<String> listCommitsInAllRepositories(@PathVariable("organization") String organization) {
         return gateWay.listCommitsInAllRepositories(organization);
     }
 
-    @GetMapping("/repos/file")
-    public void writeReposToFile(String organization) {
-        fileService.writeReposToFile(organization);
+    @GetMapping("/commits/message")
+    public List<String> listCommitMessagesInOneRepo(@RequestParam String owner, @RequestParam String repoName) {
+        return gateWay.listCommitMessagesInOneRepo(owner, repoName);
+    }
+
+    @GetMapping("/{organization}/repos/file")
+    public String getReposFile(@PathVariable("organization") String organization) {
+        return fileService.getReposFileContent(organization);
     }
 
     @GetMapping("/commits/file")
-    public void writeOneRepoCommitsToFile(String owner, String repository) {
-        fileService.writeOneRepoCommitsToFile(owner, repository);
+    public String getOneRepoCommitsFileContent(@RequestParam String owner, @RequestParam String repository) {
+        return fileService.getOneRepoCommitsFileContent(owner, repository);
     }
 
-    @GetMapping("/repos/commits/file")
-    public void writeCommitsInAllRepositoriesToFile(String organization) {
-        fileService.writeCommitsInAllRepositoriesToFile(organization);
-    }
-
-    @GetMapping("/commits/message")
-    public List<String> listCommitMessagesInOneRepo(String owner, String repoName) {
-        return gateWay.listCommitMessagesInOneRepo(owner, repoName);
+    @GetMapping("/{organization}/repos/commits/file")
+    public String getCommitsInAllRepositoriesFileContent(@PathVariable("organization") String organization) {
+        return fileService.getCommitsInAllRepositoriesFileContent(organization);
     }
 }

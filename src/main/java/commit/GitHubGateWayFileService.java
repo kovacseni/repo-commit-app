@@ -2,18 +2,11 @@ package commit;
 
 import org.springframework.stereotype.Service;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
 public class GitHubGateWayFileService {
-
-    public static final String REPOSITORY_FILENAME_TEMPLATE = "src/main/resources/repoinfo_%s.csv";
-
-    public static final String COMMIT_FILENAME_TEMPLATE = "src/main/resources/commitinfo_%s_%s.csv";
 
     private GitHubGateWay gitHubGateWay;
 
@@ -21,10 +14,13 @@ public class GitHubGateWayFileService {
         this.gitHubGateWay = gitHubGateWay;
     }
 
-    public void writeReposToFile(String organization) {
+    public String getReposFileContent(String organization) {
         List<String> organizationRepos = gitHubGateWay.listOrganizationRepositories(organization);
-        List<String> reposToWrite = addOrganizationNameToRepos(organization, organizationRepos);
-        writeReposToCsv(organization, reposToWrite);
+        List<String> reposWithHeader = addOrganizationNameToRepos(organization, organizationRepos);
+        StringBuilder builder = new StringBuilder();
+        reposWithHeader.stream()
+                .forEach(line -> builder.append(line).append("\n"));
+        return builder.toString();
     }
 
     private List<String> addOrganizationNameToRepos(String organization, List<String> organizationRepos) {
@@ -35,32 +31,20 @@ public class GitHubGateWayFileService {
         return reposToWrite;
     }
 
-    private void writeReposToCsv(String organization, List<String> organizationRepos) {
-        try {
-            Files.write(Path.of(String.format(REPOSITORY_FILENAME_TEMPLATE, organization)), organizationRepos);
-        } catch (IOException ioe) {
-            throw new IllegalStateException("Can not write file");
-        }
-    }
-
-    public void writeOneRepoCommitsToFile(String owner, String repository) {
+    public String getOneRepoCommitsFileContent(String owner, String repository) {
         List<String> commitInfo = gitHubGateWay.listCommitsInOneRepository(owner, repository);
-        commitInfo.add(0, "Repository owner;Repository name;Commiter e-mail;Commit date;Commit message");
-        writeCommitsToCsv(commitInfo, owner, repository);
+        StringBuilder builder = new StringBuilder("Repository owner;Repository name;Commiter e-mail;Commit date;Commit message").append("\n");
+        commitInfo.stream()
+                .forEach(line -> builder.append(line).append("\n"));
+        return builder.toString();
     }
 
-    private void writeCommitsToCsv(List<String> info, String owner, String repository) {
-        try {
-            Files.write(Path.of(String.format(COMMIT_FILENAME_TEMPLATE, owner, repository)), info);
-        } catch (IOException ioe) {
-            throw new IllegalStateException("Can not write file");
-        }
-    }
-
-    public void writeCommitsInAllRepositoriesToFile(String organization) {
+    public String getCommitsInAllRepositoriesFileContent(String organization) {
         List<String> repos = gitHubGateWay.listOrganizationRepositories(organization);
+        StringBuilder builder = new StringBuilder();
         for (String repo : repos) {
-           writeOneRepoCommitsToFile(organization, repo);
+           builder.append(getOneRepoCommitsFileContent(organization, repo));
         }
+        return builder.toString();
     }
 }

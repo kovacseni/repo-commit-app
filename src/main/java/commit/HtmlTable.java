@@ -45,7 +45,7 @@ public class HtmlTable {
 
     private static final List<String> PROJECT_TASK_IDS = Arrays.asList("meetingrooms", "schoolrecords", "catalog");
 
-    private List<String> htmlTable = new ArrayList<>();
+    private StringBuilder htmlTable = new StringBuilder();
 
     private List<MemberInfo> memberInfos;
 
@@ -55,7 +55,7 @@ public class HtmlTable {
         this.gitHubGateWay = gitHubGateWay;
     }
 
-    public List<String> generateHtmlTable(String organization) {
+    public String generateHtmlTable(String organization) {
         loadMemberInfos(organization);
         loadVideosTitlesAndIds();
         addHtmlHeader();
@@ -63,10 +63,10 @@ public class HtmlTable {
         addHeaderRow();
         addTableBodyRows();
         addEndTags();
-        return htmlTable;
+        return htmlTable.toString();
     }
 
-    public List<String> generateHtmlTableProjects(String organization) {
+    public String generateHtmlTableProjects(String organization) {
         loadMemberInfos(organization);
         loadVideosTitlesAndIdsProjects();
         addHtmlHeaderProjects();
@@ -74,7 +74,7 @@ public class HtmlTable {
         addHeaderRow();
         addTableBodyRows();
         addEndTags();
-        return htmlTable;
+        return htmlTable.toString();
     }
 
     public String getHtmlTitle() {
@@ -82,69 +82,77 @@ public class HtmlTable {
     }
 
     private void addHtmlHeader() {
-        htmlTable.add(
+        htmlTable.append(
                 String.format(TABLE_HEADER, HTML_TITLE, CSS_FILENAME)
-        );
+        ).append("\n");
     }
 
     private void addHtmlHeaderProjects() {
-        htmlTable.add(
+        htmlTable.append(
                 String.format(TABLE_HEADER, HTML_TITLE, CSS_FILENAME_PROJECTS)
-        );
+        ).append("\n");
     }
 
     private void addBeginTags() {
-        htmlTable.add("""
+        htmlTable.append("""
                  <body>
                  <table class="table table-bordered sticky sticky-x" style="width: auto">
-                """);
+                """).append("\n");
     }
 
     private void addHeaderRow() {
-        htmlTable.add("<thead class=\"align-middle text-center\">");
-        htmlTable.add("<tr>");
-        htmlTable.add("<th class=\"actualdate\">" + LocalDate.now() + "</th>");
+        htmlTable.append("<thead class=\"align-middle text-center\">").append("\n");
+        htmlTable.append("<tr>").append("\n");
+        htmlTable.append("<th class=\"actualdate\">" + LocalDate.now() + "</th>").append("\n");
         for (MemberInfo member : memberInfos) {
-            htmlTable.add("<th class=\"member border-bottom border-5\">" + member.getName() + "</th>");
+            htmlTable.append("<th class=\"member border-bottom border-5\">" + member.getName() + "</th>").append("\n");
         }
-        htmlTable.add("</tr>");
-        htmlTable.add("</thead>");
+        htmlTable.append("</tr>").append("\n");
+        htmlTable.append("</thead>").append("\n");
     }
 
     private void addTableBodyRows() {
-        htmlTable.add("<tbody class=\"align-middle text-center\">");
+        htmlTable.append("<tbody class=\"align-middle text-center\">").append("\n");
         for (String video : videosTitlesAndIds.keySet()) {
             String videoId = videosTitlesAndIds.get(video);
-            htmlTable.add("<tr>");
-            StringBuilder videoCellBuilder = new StringBuilder("<td class=\"video");
-            if (PROJECT_TASK_IDS.contains(videoId)) {
-                videoCellBuilder.append(" project");
-            }
-            videoCellBuilder.append(" border-end border-5\">" + video + "</td>");
-            htmlTable.add(videoCellBuilder.toString());
-            for (MemberInfo member : memberInfos) {
-                StringBuilder tableCellBuilder = new StringBuilder("<td class=\"nothing");
-                if (PROJECT_TASK_IDS.contains(videoId)) {
-                    tableCellBuilder.append(" project");
-                }
-                Optional<String> commitToThisVideo = member.getCommits().stream().filter(c -> c.startsWith("ex-" + videoId)).findAny();
-                if (commitToThisVideo.isPresent()) {
-                    tableCellBuilder.append(" done");
-                }
-                tableCellBuilder.append("\">");
-                if (member.getCommitments().containsKey(videoId)) {
-                    tableCellBuilder.append(member.getCommitments().get(videoId).toString());
-                }
-                tableCellBuilder.append("</td>");
-                htmlTable.add(tableCellBuilder.toString());
-            }
-            htmlTable.add("</tr>");
+            htmlTable.append("<tr>").append("\n");
+            handleVideoCell(video, videoId);
+            handleTableCells(videoId);
+            htmlTable.append("</tr>").append("\n");
         }
-        htmlTable.add("</tbody>");
+        htmlTable.append("</tbody>").append("\n");
+    }
+
+    private void handleVideoCell(String video, String videoId) {
+        StringBuilder videoCellBuilder = new StringBuilder("<td class=\"video");
+        if (PROJECT_TASK_IDS.contains(videoId)) {
+            videoCellBuilder.append(" project");
+        }
+        videoCellBuilder.append(" border-end border-5\">" + video + "</td>");
+        htmlTable.append(videoCellBuilder).append("\n");
+    }
+
+    private void handleTableCells(String videoId) {
+        for (MemberInfo member : memberInfos) {
+            StringBuilder tableCellBuilder = new StringBuilder("<td class=\"nothing");
+            if (PROJECT_TASK_IDS.contains(videoId)) {
+                tableCellBuilder.append(" project");
+            }
+            Optional<String> commitToThisVideo = member.getCommits().stream().filter(c -> c.startsWith("ex-" + videoId)).findAny();
+            if (commitToThisVideo.isPresent()) {
+                tableCellBuilder.append(" done");
+            }
+            tableCellBuilder.append("\">");
+            if (member.getCommitments().containsKey(videoId)) {
+                tableCellBuilder.append(member.getCommitments().get(videoId).toString());
+            }
+            tableCellBuilder.append("</td>");
+            htmlTable.append(tableCellBuilder).append("\n");
+        }
     }
 
     private void addEndTags() {
-        htmlTable.add("""
+        htmlTable.append("""
                 </table>
                     <script
                       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -153,7 +161,7 @@ public class HtmlTable {
                     ></script>
                   </body>
                 </html>
-                """);
+                """).append("\n");
     }
 
     @SneakyThrows(IOException.class)
@@ -195,13 +203,17 @@ public class HtmlTable {
     private void loadVideosTitlesAndIdsProjects() {
         videosTitlesAndIds = new LinkedHashMap<>();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(HtmlTable.class.getResourceAsStream("/videos.csv")))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                String chapterAndVideoName = line.substring(0, line.lastIndexOf(";"));
-                String videoId = line.substring(line.lastIndexOf(";") + 1);
-                if (PROJECT_TASK_IDS.contains(videoId)) {
-                    videosTitlesAndIds.put(chapterAndVideoName, videoId);
-                }
+            processLines(reader);
+        }
+    }
+
+    private void processLines(BufferedReader reader) throws IOException {
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String chapterAndVideoName = line.substring(0, line.lastIndexOf(";"));
+            String videoId = line.substring(line.lastIndexOf(";") + 1);
+            if (PROJECT_TASK_IDS.contains(videoId)) {
+                videosTitlesAndIds.put(chapterAndVideoName, videoId);
             }
         }
     }

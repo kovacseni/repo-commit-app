@@ -1,6 +1,7 @@
 package commit;
 
 import com.jayway.jsonpath.JsonPath;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -11,6 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@EnableConfigurationProperties(GitHubAuthentication.class)
 public class GitHubGateWay {
 
     private final RestTemplate restTemplate;
@@ -23,8 +25,8 @@ public class GitHubGateWay {
 
     public static final String REPOSITORY_URL_TEMPLATE = "orgs/%s/repos?page=";
 
-    public GitHubGateWay(RestTemplateBuilder builder) {
-        this.restTemplate = builder.basicAuthentication("{username}", "{password}").build();
+    public GitHubGateWay(RestTemplateBuilder builder, GitHubAuthentication authentication) {
+        this.restTemplate = builder.basicAuthentication(authentication.getUsername(), authentication.getPassword()).build();
         this.url = BASE_GITHUB_API_URL;
     }
 
@@ -92,7 +94,6 @@ public class GitHubGateWay {
         List<String> repos = listOrganizationRepositories(organization);
         for (String repo : repos) {
             List<String> commits = listCommitsInOneRepository(organization, repo);
-            commits.remove(0);
             commitInfo.addAll(commits);
         }
         return commitInfo;
